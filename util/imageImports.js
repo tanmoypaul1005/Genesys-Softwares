@@ -39,3 +39,4 @@ export { default as iWhatWeBelieveText } from "../public/svg/what we believe.svg
 export { default as iProduct1 } from "../public/img-20240916T064119Z-001/img/product1.jpeg";
 export { default as iProduct2 } from "../public/img-20240916T064119Z-001/img/product2.jpeg";
 export { default as iPayment } from "../public/svg/payment.svg";
+export { default as iVector } from "../public/svg/Vector.svg";

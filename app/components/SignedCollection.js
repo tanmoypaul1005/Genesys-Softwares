@@ -1,4 +1,4 @@
-import { iBook1, iBook2, iPaHomeHero, iPatSignature, iRightArrow } from '@/util/imageImports'
+import { iBook1, iBook2, iPaHomeHero, iPatSignature, iRightArrow, iVector } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
 
@@ -15,11 +15,11 @@ const SignedCollection = () => {
 
                     <div className='flex px-8 py-4 bg-white cursor-pointer gap-x-3 w-fit rounded-xl mt-[48px] mb-6'>
                         <div className='font-medium leading-5 text-fs16'>SHOP NOW</div>
-                        <Image src={iRightArrow} alt=""/>
+                        <Image src={iRightArrow} alt="" />
                     </div>
 
                     <div>
-                        <Image height={400} width={400} src={iPatSignature} alt=""/>
+                        <Image height={400} width={400} src={iPatSignature} alt="" />
                     </div>
                 </div>
 
@@ -28,13 +28,16 @@ const SignedCollection = () => {
                     <Image style={{ maxHeight: 400, minHeight: 400, minWidth: 300, maxWidth: 300 }} src={iBook2} alt="" width={500} height={500} />
                 </div>
             </div>
-            <div className='font-bold uppercase bg-gradient-to-b text-[48px] leading-[48px] p-[100px] text-white'>
+            <div className='relative font-bold uppercase bg-gradient-to-b text-[48px] leading-[48px] p-[100px] text-white'>
                 <div>Our mission is to enlighten, entertain  </div>
                 <div>and empower current</div>
                 <div>leaders around the world.</div>
+
+                <div className='flex gap-x-5 absolute top-[70px] left-[100px]'>
+                    <Image src={iVector} height={50} alt="" />
+                    <Image src={iVector} height={50} alt="" />
+                </div>
             </div>
-
-
 
             <div className='absolute bottom-0 right-0'>
                 <Image src={iPaHomeHero} height={500} alt="" />
