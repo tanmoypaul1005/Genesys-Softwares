@@ -117,15 +117,15 @@ const ProductOfMonth = () => {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex space-x-4">
+          <div className="grid grid-cols-2 gap-x-6">
             <button
-              className="px-4 py-2 text-white bg-black rounded-md"
+              className="w-full px-4 py-4 text-white bg-black rounded-md"
               onClick={handleAddToCart}
             >
               Add to Cart
             </button>
             <button
-              className="px-4 py-2 bg-white border border-black rounded-md"
+              className="px-4 py-4 bg-white border border-black rounded-md w-ful"
               onClick={handleBuyNow}
             >
               Buy it Now
