@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const Believe = () => {
+    
     const beliefs = [
         {
             title: 'Leadership',
