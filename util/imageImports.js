@@ -13,3 +13,14 @@ export { default as iMan1 } from "../public/img-20240916T064119Z-001/img/man1.pn
 export { default as iMan2 } from "../public/img-20240916T064119Z-001/img/man2.png";
 export { default as iMan3 } from "../public/img-20240916T064119Z-001/img/man1.png";
 export { default as iMan4 } from "../public/img-20240916T064119Z-001/img/man4.png";
+
+//book
+export { default as iBook1 } from "../public/img-20240916T064119Z-001/img/book1.png";
+export { default as iBook2 } from "../public/img-20240916T064119Z-001/img/book2.png";
+
+
+//services
+export { default as iDelivery } from "../public/svg/delivery.svg";
+export { default as iVerified } from "../public/svg/verified.svg";
+export { default as iExchange } from "../public/svg/exchange.svg";
+export { default as iCustomerSupport } from "../public/svg/customer-support 1.svg";
