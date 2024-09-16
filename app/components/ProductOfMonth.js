@@ -20,7 +20,13 @@ const ProductOfMonth = () => {
 
   return (
     <div className="container p-6 mx-auto">
-      <h1 className="text-3xl font-bold text-center mb-[48px]">PRODUCT OF THE MONTH</h1>
+      <div className="text-[70px] leading-[80px] justify-center font-bold text-center flex gap-x-2  mb-[48px]">
+      <h1 className="">PRODUCT OF </h1>
+      <div className="tracking-wide outlined-text">
+        THE MONTH
+      </div>
+      </div>
+
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
 
@@ -74,8 +80,8 @@ const ProductOfMonth = () => {
           </div>
         </div>
         <div>
-          <h2 className="mb-2 text-2xl font-bold">Premium Valuetainment Leather Backpack</h2>
-          <p className="mb-4 text-gray-700">
+          <h2 className="mb-2 text-[32px] font-medium">Premium Valuetainment Leather Backpack</h2>
+          <p className="mb-4 text-base font-normal text-[#060606CC">
             The attention to detail is evident in every aspect of this backpack. From the sturdy
             hardware and reinforced stitching to the smooth zippers and luxurious lining, no detail
             has been overlooked.
