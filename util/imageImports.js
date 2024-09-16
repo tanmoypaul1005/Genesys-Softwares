@@ -1,6 +1,7 @@
 //common
 export { default as iValuetainment } from "../public/logo/Valuetainment.svg";
 export { default as iBgLogo } from "../public/svg/bgLogo.svg";
+export { default as iRedLogo } from "../public/logo/redLogo.svg";
 export { default as iMenu } from "../public/svg/menu.svg";
 
 //Man
