@@ -24,8 +24,8 @@ const SignedCollection = () => {
                 </div>
 
                 <div className='flex gap-x-2'>
-                    <Image style={{ maxHeight: 300, minHeight: 300, minWidth: 300, maxWidth: 300 }} src={iBook1} alt="" width={500} height={500} />
-                    <Image style={{ maxHeight: 300, minHeight: 300, minWidth: 300, maxWidth: 300 }} src={iBook2} alt="" width={500} height={500} />
+                    <Image style={{ maxHeight: 400, minHeight: 400, minWidth: 300, maxWidth: 300 }} src={iBook1} alt="" width={500} height={500} />
+                    <Image style={{ maxHeight: 400, minHeight: 400, minWidth: 300, maxWidth: 300 }} src={iBook2} alt="" width={500} height={500} />
                 </div>
             </div>
             <div className='font-bold uppercase bg-gradient-to-b text-[48px] leading-[48px] p-[100px] text-white'>
