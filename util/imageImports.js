@@ -33,3 +33,7 @@ export { default as iFutureSeries } from "../public/svg/futureSeries.svg";
 export { default as iRightArrow } from "../public/svg/rightArrow.svg";
 export { default as iPatSignature } from "../public/svg/pat-signature.svg";
 export { default as iWhatWeBelieveText } from "../public/svg/what we believe.svg";
+
+
+export { default as iProduct1 } from "../public/img-20240916T064119Z-001/img/product1.jpeg";
+export { default as iProduct2 } from "../public/img-20240916T064119Z-001/img/product2.jpeg";
