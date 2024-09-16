@@ -1,3 +1,5 @@
+import { iPayment } from '@/util/imageImports'
+import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
@@ -96,6 +98,11 @@ const Footer = () => {
 
                     </div>
                 </div>
+            </div>
+
+            <div className='flex justify-between'>
+                <div className='text-base font-normal text-white '>© 2024 Valuetainment Store. All rights reserved.</div>
+                <Image src={iPayment} alt="Background Logo" />
             </div>
         </div>
     )
