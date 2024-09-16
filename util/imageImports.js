@@ -27,3 +27,4 @@ export { default as iCustomerSupport } from "../public/svg/customer-support 1.sv
 
 export { default as iShare } from "../public/svg/share.svg";
 export { default as iGoldenChess } from "../public/svg/golden-chess.svg";
+export { default as iPaHomeHero } from "../public/svg/pat-home-hero.svg";
