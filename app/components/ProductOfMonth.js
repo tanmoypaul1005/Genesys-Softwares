@@ -1,5 +1,5 @@
 "use client"
-import { iBeg1, iBeg2, iBeg3, iShare } from "@/util/imageImports";
+import { iBeg1, iBeg2, iBeg3, iBottomArrow, iShare, iTopArrow } from "@/util/imageImports";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -23,33 +23,47 @@ const ProductOfMonth = () => {
       <h1 className="text-3xl font-bold text-center mb-[48px]">PRODUCT OF THE MONTH</h1>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
-    
 
           <div className="flex gap-x-6">
-          <div className="flex flex-col gap-y-3">
+            <div className="flex flex-col gap-y-3">
+              <div onClick={() => {
+                if (mainImage === iBeg1) setMainImage(iBeg3);
+                else if (mainImage === iBeg3) setMainImage(iBeg2);
+                else if (mainImage === iBeg2) setMainImage(iBeg1);
+              }} className="flex items-center justify-center cursor-pointer">
+                <Image src={iTopArrow} alt="" />
+              </div>
               <Image
                 style={{ maxHeight: 100, minHeight: 100, minWidth: 100, maxWidth: 100 }}
-                className="w-16 h-16 border rounded-md cursor-pointer"
+                className={`w-16 ${mainImage === iBeg1 ? "border-2 border-blue-400":""} h-16 border rounded-md cursor-pointer`}
                 src={iBeg1}
                 alt="Side view"
                 onClick={() => setMainImage(iBeg1)}
               />
               <Image
                 style={{ maxHeight: 100, minHeight: 100, minWidth: 100, maxWidth: 100 }}
-                className="w-16 h-16 border rounded-md cursor-pointer"
+                className={`w-16 ${mainImage === iBeg2 ? "border-2 border-blue-400":""} h-16 border rounded-md cursor-pointer`}
                 src={iBeg2}
                 alt="Red Backpack"
                 onClick={() => setMainImage(iBeg2)}
               />
               <Image
                 style={{ maxHeight: 100, minHeight: 100, minWidth: 100, maxWidth: 100 }}
-                className="w-16 h-16 border rounded-md cursor-pointer"
+                className={`w-16 ${mainImage === iBeg3 ? "border-2 border-blue-400":""} h-16 border rounded-md cursor-pointer`}
                 src={iBeg3}
                 alt="Open view"
                 onClick={() => setMainImage(iBeg3)}
               />
+
+              <div onClick={() => {
+                if (mainImage === iBeg1) setMainImage(iBeg2);
+                else if (mainImage === iBeg2) setMainImage(iBeg3);
+                else if (mainImage === iBeg3) setMainImage(iBeg1);
+              }} className="flex items-center justify-center cursor-pointer">
+                <Image src={iBottomArrow} alt="" />
+              </div>
             </div>
-            <div className="mb-4">
+            <div>
               <Image
                 style={{ maxHeight: 400, minHeight: 400, minWidth: 400, maxWidth: 400 }}
                 className="w-full rounded-lg shadow-md"
@@ -57,7 +71,6 @@ const ProductOfMonth = () => {
                 alt="Premium Valuetainment Leather Backpack"
               />
             </div>
-          
           </div>
         </div>
         <div>
@@ -104,7 +117,7 @@ const ProductOfMonth = () => {
               <div
                 type="number"
                 className="px-4 py-2 border-t border-b border-black"
-                
+
               >{quantity}</div>
               <button
                 className="px-4 py-2 border border-black"

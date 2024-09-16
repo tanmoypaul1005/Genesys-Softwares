@@ -3,6 +3,8 @@ export { default as iValuetainment } from "../public/logo/Valuetainment.svg";
 export { default as iBgLogo } from "../public/svg/bgLogo.svg";
 export { default as iRedLogo } from "../public/logo/redLogo.svg";
 export { default as iMenu } from "../public/svg/menu.svg";
+export { default as iTopArrow } from "../public/svg/topArrow.svg";
+export { default as iBottomArrow } from "../public/svg/bottomArrow.svg";
 
 //Man
 export { default as iCap1 } from "../public/img-20240916T064119Z-001/img/cap1.jpeg";
