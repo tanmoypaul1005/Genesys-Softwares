@@ -6,12 +6,12 @@ import { iFutureSeries, iProduct1, iProduct2 } from '@/util/imageImports'
 const NewArrival = () => {
     return (
         <>
-            <div className='p-[100px] bg-[#F6F5F5]'>
+            <div className='all_padding bg-[#F6F5F5]'>
                 <div className='uppercase mb-[48px] font-semibold text-[70px] leading-[84px] text-[#060606]'>New arrival</div>
                 <ShortSleeve />
             </div>
 
-            <div className='flex justify-between bg-white p-[100px]'>
+            <div className='flex justify-between bg-white all_padding'>
                 <Image src={iFutureSeries} alt="" height={300} />
 
 

@@ -24,7 +24,7 @@ const Believe = () => {
     ];
 
     return (
-        <div className='relative flex justify-between p-[100px] bg-gradient-custom'>
+        <div className='relative flex justify-between all_padding bg-gradient-custom'>
             <div>
             <Image className="w-full h-full" width={500} height={900} src={iMan2} alt="Man Image" />
             </div>

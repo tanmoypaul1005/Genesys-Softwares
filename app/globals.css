@@ -8,6 +8,11 @@
   text-stroke: 1px black; /* Fallback for non-webkit browsers */
 }
 
+
+.all_padding{
+  @apply px-5 md:p-[100px]
+}
+
 /* 
 :root {
   --background: #ffffff;

@@ -4,7 +4,7 @@ import React from 'react'
 
 const Services = () => {
     return (
-        <div className='flex justify-between bg-gradient-to-b p-[100px] gap-x-10'>
+        <div className='flex flex-wrap items-center justify-between gap-y-5 bg-gradient-to-b all_padding gap-x-10'>
             <div className='text-white'>
                 <Image src={iDelivery} alt=""/>
                 <div className='mt-6 mb-3 text-2xl font-medium leading-7'>Shipping</div>

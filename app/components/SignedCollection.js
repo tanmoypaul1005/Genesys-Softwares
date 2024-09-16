@@ -5,7 +5,7 @@ import React from 'react'
 const SignedCollection = () => {
     return (
         <div className='relative'>
-            <div className='bg-[#111111] flex justify-between p-[100px]'>
+            <div className='bg-[#111111] flex justify-between all_padding'>
                 <div>
                     <div className='uppercase font-medium text-[50px] leading-[58px] bg-gradient-to-b from-[#DE2A2F] to-[#EF5256] text-transparent bg-clip-text'>
                         <div className='text-white'>Patrick Bet-David </div>
@@ -28,7 +28,7 @@ const SignedCollection = () => {
                     <Image style={{ maxHeight: 400, minHeight: 400, minWidth: 300, maxWidth: 300 }} src={iBook2} alt="" width={500} height={500} />
                 </div>
             </div>
-            <div className='relative font-bold uppercase bg-gradient-to-b text-[48px] leading-[48px] p-[100px] text-white'>
+            <div className='relative font-bold uppercase bg-gradient-to-b text-[48px] leading-[48px] all_padding text-white'>
                 <div>Our mission is to enlighten, entertain  </div>
                 <div>and empower current</div>
                 <div>leaders around the world.</div>
