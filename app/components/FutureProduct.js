@@ -4,7 +4,7 @@ import React from 'react'
 
 const FutureProduct = () => {
     return (
-        <div className='flex justify-between px-10 py-10'>
+        <div className='flex justify-between'>
             <div className='text-white'>
                 <Image
                  style={{

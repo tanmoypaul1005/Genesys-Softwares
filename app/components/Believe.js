@@ -1,4 +1,4 @@
-import { iBgLogo, iGoldenChess, iMan2 } from '@/util/imageImports'
+import { iBgLogo, iGoldenChess, iMan2, iWhatWeBelieveText } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
 
@@ -10,7 +10,7 @@ const Believe = () => {
                 <Image width={500} height={900} src={iMan2} alt="" />
             </div>
 
-            <div className='flex flex-col gap-y-[48px]'>
+            <div className='flex flex-col gap-y-[48px] mt-14'>
                 <div className='text-white w-[700px] text-medium border-b-[1px] border-white pb-6'>
                     <span className='text-[32px]  leading-[38px]'>Leadership</span>
                     <span className='text-base'> is vital from the top of corporations to the military to small businesses to parents to students. We all can be leaders.
@@ -42,6 +42,10 @@ const Believe = () => {
 
             <div className='absolute top-0 right-0'>
                 <Image src={iBgLogo} alt="" />
+            </div>
+
+            <div className='absolute transform -translate-x-1/2 top-10 left-1/2 '>
+                <Image src={iWhatWeBelieveText} height={150} alt="" />
             </div>
         </div>
     )

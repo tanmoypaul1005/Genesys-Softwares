@@ -12,7 +12,7 @@ const NewArrival = () => {
             </div>
 
             <div className='flex justify-between bg-white p-[100px]'>
-                   <Image src={iFutureSeries} alt="" height={300}/>
+                <Image src={iFutureSeries} alt="" height={300} />
             </div>
         </>
     )
