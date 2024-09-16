@@ -1,4 +1,5 @@
 
+import Believe from "./components/Believe";
 import BestSellingProducts from "./components/BestSellingProducts";
 import ProductOfMonth from "./components/ProductOfMonth";
 import Services from "./components/Services";
@@ -9,6 +10,7 @@ export default function Home() {
     <div className="">
       <BestSellingProducts />
       <SignedCollection/>
+      <Believe/>
       <ProductOfMonth/>
       <Services/>
     </div>

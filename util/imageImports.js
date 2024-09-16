@@ -1,6 +1,6 @@
 //common
 export { default as iValuetainment } from "../public/logo/Valuetainment.svg";
-
+export { default as iBgLogo } from "../public/svg/bgLogo.svg";
 
 //Man
 export { default as iCap1 } from "../public/img-20240916T064119Z-001/img/cap1.jpeg";
@@ -26,3 +26,4 @@ export { default as iExchange } from "../public/svg/exchange.svg";
 export { default as iCustomerSupport } from "../public/svg/customer-support 1.svg";
 
 export { default as iShare } from "../public/svg/share.svg";
+export { default as iGoldenChess } from "../public/svg/golden-chess.svg";
