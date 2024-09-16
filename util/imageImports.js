@@ -29,3 +29,5 @@ export { default as iShare } from "../public/svg/share.svg";
 export { default as iGoldenChess } from "../public/svg/golden-chess.svg";
 export { default as iPaHomeHero } from "../public/svg/pat-home-hero.svg";
 export { default as iFutureSeries } from "../public/svg/futureSeries.svg";
+export { default as iRightArrow } from "../public/svg/rightArrow.svg";
+export { default as iPatSignature } from "../public/svg/pat-signature.svg";
