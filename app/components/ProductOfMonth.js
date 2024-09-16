@@ -1,10 +1,10 @@
 "use client"
-import { iShare } from "@/util/imageImports";
+import { iBeg1, iBeg2, iBeg3, iShare } from "@/util/imageImports";
 import Image from "next/image";
 import { useState } from "react";
 
 const ProductOfMonth = () => {
-    
+
   const [quantity, setQuantity] = useState(1);
   const [size, setSize] = useState("M");
 
@@ -22,29 +22,33 @@ const ProductOfMonth = () => {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
           {/* Image Carousel */}
-          <div className="space-y-4">
-            <img
-              className="w-full rounded-lg shadow-md"
-              src="/images/backpack.jpg"
-              alt="Premium Valuetainment Leather Backpack"
-            />
-            <div className="flex space-x-2">
-              <img
+          <div className="flex gap-x-6">
+            <div className="flex flex-col gap-y-3">
+              <Image
+                style={{ maxHeight: 100, minHeight: 100, minWidth: 100, maxWidth: 100 }}
                 className="w-16 h-16 border rounded-md"
-                src="/images/backpack-side.jpg"
+                src={iBeg1}
                 alt="Side view"
               />
-              <img
+              <Image
+                style={{ maxHeight: 100, minHeight: 100, minWidth: 100, maxWidth: 100 }}
                 className="w-16 h-16 border rounded-md"
-                src="/images/backpack-red.jpg"
+                src={iBeg2}
                 alt="Red Backpack"
               />
-              <img
+              <Image
+                style={{ maxHeight: 100, minHeight: 100, minWidth: 100, maxWidth: 100 }}
                 className="w-16 h-16 border rounded-md"
-                src="/images/backpack-open.jpg"
+                src={iBeg3}
                 alt="Open view"
               />
             </div>
+            <Image
+              style={{ maxHeight: 400, minHeight: 400, minWidth: 400, maxWidth: 400 }}
+              className="w-full rounded-lg shadow-md"
+              src={iBeg1}
+              alt="Premium Valuetainment Leather Backpack"
+            />
           </div>
         </div>
         <div>
@@ -54,7 +58,7 @@ const ProductOfMonth = () => {
             hardware and reinforced stitching to the smooth zippers and luxurious lining, no detail
             has been overlooked.
           </p>
-        
+
           <div className="flex mb-2 text-xl font-semibold gap-x-3">
             <p className="">Price:</p>
             <p className="text-[#EA2127]"> $199.95</p>
@@ -66,11 +70,10 @@ const ProductOfMonth = () => {
               {["S", "M", "L", "XL", "XXL"].map((sizeOption) => (
                 <button
                   key={sizeOption}
-                  className={`px-3 py-1 rounded-md border ${
-                    size === sizeOption
-                      ? "bg-black text-white"
-                      : "bg-gray-100 text-gray-600"
-                  }`}
+                  className={`px-3 py-1 rounded-md border ${size === sizeOption
+                    ? "bg-black text-white"
+                    : "bg-gray-100 text-gray-600"
+                    }`}
                   onClick={() => setSize(sizeOption)}
                 >
                   {sizeOption}
@@ -123,7 +126,7 @@ const ProductOfMonth = () => {
           {/* Share Links */}
           <div className="flex mt-6 gap-x-3">
             <div className="flex items-center justify-center font-semibold">Share:</div>
-            <Image src={iShare} alt=""/>
+            <Image src={iShare} alt="" />
           </div>
         </div>
       </div>
