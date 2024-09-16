@@ -8,7 +8,8 @@ const BestSellingProducts = () => {
                 <div className='text-[#060606]'>Buy 1 get 1 Free</div>
                 <div className='flex gap-x-3'>
                     <div className='text-[#060606]'>on </div>
-                    <div className='text-[#060606]'>best selling products</div>
+                    <div className='text-[#060606] tracking-wide outlined-text '>best selling products</div>
+                    
                 </div>
             </div>
 
