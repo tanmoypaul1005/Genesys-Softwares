@@ -20,7 +20,7 @@ const ProductOfMonth = () => {
 
   return (
     <div className="container p-6 mx-auto">
-      <h1 className="mb-4 text-3xl font-bold">PRODUCT OF THE MONTH</h1>
+      <h1 className="text-3xl font-bold text-center mb-[48px]">PRODUCT OF THE MONTH</h1>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
     
@@ -96,19 +96,18 @@ const ProductOfMonth = () => {
             <label className="font-semibold">Quantity:</label>
             <div className="flex items-center mt-2">
               <button
-                className="px-2 py-1 border rounded-l-md"
+                className="px-4 py-2 border border-black "
                 onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}
               >
                 -
               </button>
-              <input
+              <div
                 type="number"
-                className="w-16 text-center border-t border-b"
-                value={quantity}
-                onChange={(e) => setQuantity(Number(e.target.value))}
-              />
+                className="px-4 py-2 border-t border-b border-black"
+                
+              >{quantity}</div>
               <button
-                className="px-2 py-1 border rounded-r-md"
+                className="px-4 py-2 border border-black"
                 onClick={() => setQuantity(quantity + 1)}
               >
                 +
