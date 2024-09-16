@@ -8,6 +8,8 @@ const ProductOfMonth = () => {
   const [quantity, setQuantity] = useState(1);
   const [size, setSize] = useState("M");
 
+  const [mainImage, setMainImage] = useState(iBeg1);
+
   const handleAddToCart = () => {
     alert(`Added ${quantity} item(s) of size ${size} to cart!`);
   };
@@ -21,34 +23,41 @@ const ProductOfMonth = () => {
       <h1 className="mb-4 text-3xl font-bold">PRODUCT OF THE MONTH</h1>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
-          {/* Image Carousel */}
+    
+
           <div className="flex gap-x-6">
-            <div className="flex flex-col gap-y-3">
+          <div className="flex flex-col gap-y-3">
               <Image
                 style={{ maxHeight: 100, minHeight: 100, minWidth: 100, maxWidth: 100 }}
-                className="w-16 h-16 border rounded-md"
+                className="w-16 h-16 border rounded-md cursor-pointer"
                 src={iBeg1}
                 alt="Side view"
+                onClick={() => setMainImage(iBeg1)}
               />
               <Image
                 style={{ maxHeight: 100, minHeight: 100, minWidth: 100, maxWidth: 100 }}
-                className="w-16 h-16 border rounded-md"
+                className="w-16 h-16 border rounded-md cursor-pointer"
                 src={iBeg2}
                 alt="Red Backpack"
+                onClick={() => setMainImage(iBeg2)}
               />
               <Image
                 style={{ maxHeight: 100, minHeight: 100, minWidth: 100, maxWidth: 100 }}
-                className="w-16 h-16 border rounded-md"
+                className="w-16 h-16 border rounded-md cursor-pointer"
                 src={iBeg3}
                 alt="Open view"
+                onClick={() => setMainImage(iBeg3)}
               />
             </div>
-            <Image
-              style={{ maxHeight: 400, minHeight: 400, minWidth: 400, maxWidth: 400 }}
-              className="w-full rounded-lg shadow-md"
-              src={iBeg1}
-              alt="Premium Valuetainment Leather Backpack"
-            />
+            <div className="mb-4">
+              <Image
+                style={{ maxHeight: 400, minHeight: 400, minWidth: 400, maxWidth: 400 }}
+                className="w-full rounded-lg shadow-md"
+                src={mainImage}
+                alt="Premium Valuetainment Leather Backpack"
+              />
+            </div>
+          
           </div>
         </div>
         <div>
@@ -135,3 +144,6 @@ const ProductOfMonth = () => {
 };
 
 export default ProductOfMonth;
+
+
+
