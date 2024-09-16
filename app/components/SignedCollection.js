@@ -19,7 +19,7 @@ const SignedCollection = () => {
                     </div>
 
                     <div>
-                        <Image src={iPatSignature} alt=""/>
+                        <Image height={400} width={400} src={iPatSignature} alt=""/>
                     </div>
                 </div>
 
