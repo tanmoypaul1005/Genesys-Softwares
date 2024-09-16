@@ -4,7 +4,7 @@ import React from 'react'
 
 const  ShortSleeve = () => {
     return (
-        <div className='flex flex-wrap justify-between gap-y-5'>
+        <div className='flex flex-wrap items-center justify-between gap-y-5'>
 
         <div className='p-4 bg-white rounded-xl'>
             <Image width={200} height={200} src={iCap1} alt="" className='rounded-lg' />

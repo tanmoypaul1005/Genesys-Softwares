@@ -11,11 +11,10 @@ const NewArrival = () => {
                 <ShortSleeve />
             </div>
 
-            <div className='flex justify-between bg-white all_padding'>
+            <div className='flex flex-col justify-between bg-white md:flex-row all_padding'>
                 <Image src={iFutureSeries} alt="" height={300} />
 
-
-                <div className='flex gap-x-6'>
+                <div className='flex flex-col md:flex-row gap-x-6'>
                     <div>
                         <Image height={250} width={250} className='rounded-xl' src={iProduct1} alt="" />
                         <div className='flex flex-col mt-6 gap-y-3'>

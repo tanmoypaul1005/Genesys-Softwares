@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='bg-[#000000] padding_x py-10'>
             <div className='flex  border-b-[1px] border-[#A6A5A380]'>
                 <Image src={iRedLogo} alt="" />
-                <div className='flex justify-center items-center font-extrabold pb-7 text-[100px] text-white  leading-[50px]'>
+                <div className='flex justify-center items-center font-extrabold pb-7 text-base md:text-[100px] text-white  leading-[50px]'>
                     VTMERCH
                 </div>
             </div>
