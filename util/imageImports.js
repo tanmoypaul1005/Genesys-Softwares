@@ -24,3 +24,5 @@ export { default as iDelivery } from "../public/svg/delivery.svg";
 export { default as iVerified } from "../public/svg/verified.svg";
 export { default as iExchange } from "../public/svg/exchange.svg";
 export { default as iCustomerSupport } from "../public/svg/customer-support 1.svg";
+
+export { default as iShare } from "../public/svg/share.svg";
