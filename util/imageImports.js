@@ -40,3 +40,4 @@ export { default as iProduct1 } from "../public/img-20240916T064119Z-001/img/pro
 export { default as iProduct2 } from "../public/img-20240916T064119Z-001/img/product2.jpeg";
 export { default as iPayment } from "../public/svg/payment.svg";
 export { default as iVector } from "../public/svg/Vector.svg";
+export { default as iHeaderSign } from "../public/svg/headerSign.svg";
