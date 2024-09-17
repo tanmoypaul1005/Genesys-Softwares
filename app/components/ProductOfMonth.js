@@ -31,8 +31,8 @@ const ProductOfMonth = () => {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
 
-          <div className="flex flex-col md:flex-row gap-x-6">
-            <div className="flex flex-row gap-x-3 md:flex-col gap-y-3">
+          <div className="flex gap-x-6">
+            <div className="flex flex-col gap-x-3 gap-y-3">
               <div onClick={() => {
                 if (mainImage === iBeg1) setMainImage(iBeg3);
                 else if (mainImage === iBeg3) setMainImage(iBeg2);
@@ -70,12 +70,13 @@ const ProductOfMonth = () => {
                 <Image src={iBottomArrow} alt="" />
               </div>
             </div>
-            <div>
+            <div className="w-full max-w-[400px] mx-auto">
               <Image
-                style={{ maxHeight: 400, minHeight: 400, minWidth: 400, maxWidth: 400 }}
-                className="w-full rounded-lg shadow-md"
+                className="w-full h-auto rounded-lg shadow-md"
                 src={mainImage}
                 alt="Premium Valuetainment Leather Backpack"
+                width={400}
+                height={400}
               />
             </div>
           </div>
@@ -166,3 +167,11 @@ export default ProductOfMonth;
 
 
 
+// <div>
+// <Image
+//   style={{ maxHeight: 400, minHeight: 400, minWidth: 400, maxWidth: 400 }}
+//   className="w-full rounded-lg shadow-md"
+//   src={mainImage}
+//   alt="Premium Valuetainment Leather Backpack"
+// />
+// </div>
