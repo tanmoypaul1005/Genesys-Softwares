@@ -44,7 +44,7 @@ const SignedCollection = () => {
                     </div>
                 </div>
             </div>
-            <div className='relative font-bold uppercase bg-gradient-to-b text-[14px] md:text-[48px] md:leading-[48px] all_padding text-white'>
+            <div className='relative font-bold uppercase bg-gradient-to-b text-[10px] md:text-[48px] md:leading-[48px] all_padding text-white'>
                 <div>Our mission is to enlighten, entertain  </div>
                 <div>and empower current</div>
                 <div>leaders around the world.</div>
