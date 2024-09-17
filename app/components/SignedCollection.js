@@ -44,7 +44,7 @@ const SignedCollection = () => {
                     </div>
                 </div>
             </div>
-            <div className='relative font-bold uppercase bg-gradient-to-b text-[48px] leading-[48px] all_padding text-white'>
+            <div className='relative font-bold uppercase bg-gradient-to-b text-2xl md:text-[48px] md:leading-[48px] all_padding text-white'>
                 <div>Our mission is to enlighten, entertain  </div>
                 <div>and empower current</div>
                 <div>leaders around the world.</div>
@@ -56,7 +56,12 @@ const SignedCollection = () => {
             </div>
 
             <div className='absolute bottom-0 right-0'>
-                <Image src={iPaHomeHero} height={500} alt="" />
+                <Image
+                    className='w-fit h-[240px] md:h-[500px]'
+                    src={iPaHomeHero}
+                    alt=""
+                    height={500} // Ensure the width is set to maintain aspect ratio
+                />
             </div>
         </div>
     )
