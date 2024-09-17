@@ -5,7 +5,7 @@ import React from 'react';
 const ShopCollection = () => {
   return (
     <div className='bg-gradient-to-b-custom all_padding'>
-      <div className='flex text-4xl gap-x-2'>
+      <div className='flex flex-col items-center justify-center mb-4 text-4xl md:hidden gap-x-2'>
         <div className='text-white'>Shop</div>
         <div className='tracking-wide outlined-text'>Collection</div>
       </div>
