@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         'gradient-to-b': 'linear-gradient(180deg, #DE2A2F 0%, #EF5256 100%)',
         'gradient-custom': 'linear-gradient(97.11deg, #3B3B3B 3.61%, #000000 63.2%)',
+        'gradient-to-b-custom': 'linear-gradient(180deg, #2C2A2A 0%, #000000 100%)',
       },
       colors: {
         background: "var(--background)",
