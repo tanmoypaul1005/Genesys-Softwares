@@ -31,8 +31,8 @@ const ProductOfMonth = () => {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
 
-          <div className="flex gap-x-6">
-            <div className="flex flex-col gap-y-3">
+          <div className="flex flex-col md:flex-row gap-x-6">
+            <div className="flex flex-row gap-x-3 md:flex-col gap-y-3">
               <div onClick={() => {
                 if (mainImage === iBeg1) setMainImage(iBeg3);
                 else if (mainImage === iBeg3) setMainImage(iBeg2);

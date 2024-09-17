@@ -24,7 +24,7 @@ const SignedCollection = () => {
                 </div>
 
                 <div className='flex flex-wrap items-center justify-center w-full gap-2'>
-                    <div className='w-1/2  lg:w-1/3'>
+                    <div className='w-1/2 lg:w-1/3'>
                         <Image
                             className='w-full h-auto rounded-lg'
                             src={iBook1}
@@ -49,15 +49,15 @@ const SignedCollection = () => {
                 <div>and empower current</div>
                 <div>leaders around the world.</div>
 
-                <div className='flex gap-x-5 absolute top-[70px] left-[100px]'>
+                <div className=' gap-x-5 hidden md:flex absolute top-[70px] left-[100px]'>
                     <Image src={iVector} height={50} alt="" />
                     <Image src={iVector} height={50} alt="" />
                 </div>
             </div>
 
-            {/* <div className='absolute bottom-0 right-0'>
+            <div className='absolute bottom-0 right-0'>
                 <Image src={iPaHomeHero} height={500} alt="" />
-            </div> */}
+            </div>
         </div>
     )
 }

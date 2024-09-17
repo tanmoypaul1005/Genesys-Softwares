@@ -11,8 +11,8 @@ const ShortSleeve = () => {
   ];
 
   return (
-    <div className='flex flex-wrap items-center justify-between gap-y-5'>
-      {products.map((product, index) => (
+    <div className='flex flex-wrap items-center justify-center md:justify-between gap-y-5'>
+      {products?.map((product, index) => (
         <ProductCard
           key={index}
           imageSrc={product.imageSrc}
@@ -31,7 +31,7 @@ export default ShortSleeve;
 
 export const ProductCard = ({ imageSrc, title, price, originalPrice }) => {
   return (
-    <div className='p-4 bg-white rounded-xl'>
+    <div className='flex flex-col items-center justify-center p-4 bg-white rounded-xl'>
       <Image width={240} height={240} src={imageSrc} alt={title} className='rounded-lg' />
       <div className='flex flex-col mt-7 gap-y-3'>
         <div className='text-sm font-semibold leading-5'>{title}</div>
