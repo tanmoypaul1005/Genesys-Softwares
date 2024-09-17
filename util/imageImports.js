@@ -55,3 +55,7 @@ export { default as iBeg3 } from "../public/img-20240916T064119Z-001/img/beg3.pn
 //footer
 export { default as iEmail } from "../public/svg/email.svg";
 export { default as iTelephone } from "../public/svg/telephone.svg";
+export { default as iFaceBook } from "../public/svg/facebook.svg";
+export { default as iTwitter} from "../public/svg/Twitter.svg";
+export { default as iLinkedin } from "../public/svg/Linkedin.svg";
+export { default as iInstagram } from "../public/svg/instagram.svg";

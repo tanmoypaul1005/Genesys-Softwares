@@ -1,4 +1,4 @@
-import { iEmail, iPayment, iRedLogo, iTelephone } from '@/util/imageImports'
+import { iEmail, iFaceBook, iInstagram, iLinkedin, iPayment, iRedLogo, iTelephone, iTwitter } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
 
@@ -103,6 +103,13 @@ const Footer = () => {
                             <div>
                                 store@valuetainment.com
                             </div>
+                        </div>
+
+                        <div className='font-normal flex gap-x-3 text-white text-[16px] leading-6'>
+                            <Image src={iFaceBook} alt="" />
+                            <Image src={iTwitter} alt="" />
+                            <Image src={iLinkedin} alt="" />
+                            <Image src={iInstagram} alt="" />
                         </div>
 
 
