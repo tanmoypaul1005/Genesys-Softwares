@@ -5,7 +5,7 @@ import React from 'react'
 const SignedCollection = () => {
     return (
         <div className='relative'>
-            <div className='bg-[#111111] flex justify-between all_padding'>
+            <div className='bg-[#111111] flex flex-col md:flex-row justify-between all_padding'>
                 <div>
                     <div className='uppercase font-medium text-[50px] leading-[58px] bg-gradient-to-b from-[#DE2A2F] to-[#EF5256] text-transparent bg-clip-text'>
                         <div className='text-white'>Patrick Bet-David </div>
