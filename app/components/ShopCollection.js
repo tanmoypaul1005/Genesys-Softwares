@@ -36,9 +36,10 @@ const ShopCollection = () => {
               minWidth: "100%"
             }}
             src={iMultiCap} className='object-cover opacity-75' alt="" />
+            <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
           </div>
 
-          <div>
+          <div className='relative'> 
           <Image
             style={{
               maxHeight: 180,
@@ -48,8 +49,8 @@ const ShopCollection = () => {
             }}
             className='opacity-75'
             src={iMultiBook} alt="" />
+          <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
           </div>
-
         </div>
 
         <div className='relative w-full'>
@@ -65,7 +66,7 @@ const ShopCollection = () => {
         </div>
 
         <div className='flex flex-col w-full gap-y-5'>
-          <div>
+          <div className='relative'>
           <Image
             style={{
               maxHeight: 250,
@@ -74,10 +75,12 @@ const ShopCollection = () => {
               minWidth: "100%"
             }}
             className='opacity-75'
-            src={iTShirt1} alt="" />
+            src={iTShirt1} alt="" 
+            />
+<div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
           </div>
 
-          <div>
+          <div className='relative'>
           <Image
             style={{
               maxHeight: 250,
@@ -87,6 +90,7 @@ const ShopCollection = () => {
             }}
             className='opacity-75'
             src={iTShirt2} alt="" />
+            <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
           </div>
         
         </div>
