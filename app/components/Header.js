@@ -22,7 +22,7 @@ const Header = () => {
                     <Image height={900} width={900}  src={iHeaderSign} alt="" />
                 </div>
 
-                <div className='mt-[-14px] md:mt-[-40px]'>
+                <div className='mt-[-12px] md:mt-[-40px]'>
                 <FutureProduct />
                 </div>
             </div>
