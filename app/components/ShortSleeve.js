@@ -2,55 +2,44 @@ import { iCap1, iCap2, iCap3, iCap4 } from '@/util/imageImports';
 import Image from 'next/image';
 import React from 'react'
 
-const  ShortSleeve = () => {
-    return (
-        <div className='flex flex-wrap items-center justify-between gap-y-5'>
+const ShortSleeve = () => {
+  const products = [
+    { imageSrc: iCap1, title: 'Army Green Active Short Sleeve', price: '34.95', originalPrice: '34.95' },
+    { imageSrc: iCap2, title: 'Army Green Active Short Sleeve', price: '34.95', originalPrice: '34.95' },
+    { imageSrc: iCap3, title: 'Army Green Active Short Sleeve', price: '34.95', originalPrice: '34.95' },
+    { imageSrc: iCap4, title: 'Army Green Active Short Sleeve', price: '34.95', originalPrice: '34.95' },
+  ];
 
-        <div className='p-4 bg-white rounded-xl'>
-            <Image width={200} height={200} src={iCap1} alt="" className='rounded-lg' />
-            <div className='flex flex-col mt-[30px] gap-y-3'>
-                <div className='text-sm font-semibold leading-5'>Army Green Active Short Sleeve</div>
-                <div className='flex font-medium text-[20px] leading-6'>
-                    <div>$ 34.95</div>
-                    <div className='text-[#9B9B9B] px-3 line-through'>$ 34.95</div>
-                </div>
-            </div>
-        </div>
-
-        <div className='p-4 bg-white rounded-xl'>
-            <Image width={200} height={200} src={iCap2} alt="" className='rounded-lg' />
-            <div className='flex flex-col mt-[30px] gap-y-3'>
-                <div className='text-sm font-semibold leading-5'>Army Green Active Short Sleeve</div>
-                <div className='flex font-medium text-[20px] leading-6'>
-                    <div>$ 34.95</div>
-                    <div className='text-[#9B9B9B] px-3 line-through'>$ 34.95</div>
-                </div>
-            </div>
-        </div>
-
-        <div className='p-4 bg-white rounded-xl'>
-            <Image width={200} height={200} src={iCap3} alt="" className='rounded-lg' />
-            <div className='flex flex-col mt-[30px] gap-y-3'>
-                <div className='text-sm font-semibold leading-5'>Army Green Active Short Sleeve</div>
-                <div className='flex font-medium text-[20px] leading-6'>
-                    <div>$ 34.95</div>
-                    <div className='text-[#9B9B9B] px-3 line-through'>$ 34.95</div>
-                </div>
-            </div>
-        </div>
-
-        <div className='p-4 bg-white rounded-xl'>
-            <Image width={200} height={200} src={iCap4} alt="" className='rounded-lg' />
-            <div className='flex flex-col mt-[30px] gap-y-3'>
-                <div className='text-sm font-semibold leading-5'>Army Green Active Short Sleeve</div>
-                <div className='flex font-medium text-[20px] leading-6'>
-                    <div>$ 34.95</div>
-                    <div className='text-[#9B9B9B] px-3 line-through'>$ 34.95</div>
-                </div>
-            </div>
-        </div>
+  return (
+    <div className='flex flex-wrap items-center justify-between gap-y-5'>
+      {products.map((product, index) => (
+        <ProductCard
+          key={index}
+          imageSrc={product.imageSrc}
+          title={product.title}
+          price={product.price}
+          originalPrice={product.originalPrice}
+        />
+      ))}
     </div>
-    )
-}
+  );
+};
 
 export default ShortSleeve;
+
+
+
+export const ProductCard = ({ imageSrc, title, price, originalPrice }) => {
+  return (
+    <div className='p-4 bg-white rounded-xl'>
+      <Image width={240} height={240} src={imageSrc} alt={title} className='rounded-lg' />
+      <div className='flex flex-col mt-7 gap-y-3'>
+        <div className='text-sm font-semibold leading-5'>{title}</div>
+        <div className='flex text-lg font-medium leading-6'>
+          <div>${price}</div>
+          <div className='px-3 text-gray-400 line-through'>${originalPrice}</div>
+        </div>
+      </div>
+    </div>
+  );
+};
