@@ -32,7 +32,7 @@ const ProductOfMonth = () => {
         <div>
 
           <div className="flex gap-x-6">
-            <div className="flex flex-col gap-x-3 gap-y-2">
+            <div className="flex flex-col items-center justify-center gap-x-3 gap-y-2">
               <div onClick={() => {
                 if (mainImage === iBeg1) setMainImage(iBeg3);
                 else if (mainImage === iBeg3) setMainImage(iBeg2);
