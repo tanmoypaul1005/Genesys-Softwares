@@ -6,17 +6,17 @@ import { iFutureSeries, iProduct1, iProduct2 } from '@/util/imageImports'
 const NewArrival = () => {
     return (
         <>
-            <div className='all_padding bg-[#F6F5F5]'>
-                <div className='uppercase mb-[48px] font-semibold text-[70px] leading-[84px] text-[#060606]'>New arrival</div>
+            <div className='all_padding bg-[rgb(246,245,245)]'>
+                <div className='uppercase mb-3 md:mb-[48px] font-semibold text-2xl md:text-[70px] leading-[84px] text-[#060606]'>New arrival</div>
                 <ShortSleeve />
             </div>
 
             <div className='flex flex-col justify-between bg-white md:flex-row all_padding'>
-                <Image src={iFutureSeries} alt="" height={300} />
+                <Image src={iFutureSeries}  alt="" height={300} />
 
                 <div className='flex flex-col md:flex-row gap-x-6'>
                     <div>
-                        <Image height={250} width={250} className='rounded-xl' src={iProduct1} alt="" />
+                        <Image height={280} width={280} className='rounded-xl' src={iProduct1} alt="" />
                         <div className='flex flex-col mt-6 gap-y-3'>
                             <div className='text-sm font-semibold leading-5'>Army Green Active Short Sleeve</div>
                             <div className='flex font-medium text-[20px] leading-6'>
@@ -27,7 +27,7 @@ const NewArrival = () => {
                     </div>
 
                     <div>
-                        <Image height={250} width={250} className='rounded-xl' src={iProduct2} alt="" />
+                        <Image height={280} width={280} className='rounded-xl' src={iProduct2} alt="" />
                         <div className='flex flex-col mt-6 gap-y-3'>
                             <div className='text-sm font-semibold leading-5'>Army Green Active Short Sleeve</div>
                             <div className='flex font-medium text-[20px] leading-6'>
