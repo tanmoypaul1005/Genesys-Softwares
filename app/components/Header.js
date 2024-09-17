@@ -5,7 +5,7 @@ import FutureProduct from './FutureProduct'
 
 const Header = () => {
     return (
-        <div className='bg-[#EA2127] pb-[60px] px-[100px]'>
+        <div className='bg-[#EA2127] pb-[60px] padding_x'>
             <div className='text-black py-5  md:py-[50px]'>
                 <div className='flex justify-between'>
 
@@ -19,11 +19,11 @@ const Header = () => {
 
             <div className='relative'>
                 <div>
-                    <Image height={900} width={900}  src={iHeaderSign} alt="" />
+                    <Image height={900} width={900} src={iHeaderSign} alt="" />
                 </div>
 
-                <div className='mt-[-12px] md:mt-[-40px]'>
-                <FutureProduct />
+                <div className='mt-[-16px] md:mt-[-40px]'>
+                    <FutureProduct />
                 </div>
             </div>
         </div>

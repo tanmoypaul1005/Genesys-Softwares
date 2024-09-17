@@ -12,7 +12,7 @@ const FutureProduct = () => {
   ];
 
   return (
-    <div className='flex flex-wrap justify-between gap-y-5'>
+    <div className='flex flex-wrap justify-center md:justify-between gap-y-5'>
       {products.map((product, index) => (
         <ProductCard
           key={index}

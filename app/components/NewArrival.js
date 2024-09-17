@@ -7,7 +7,7 @@ const NewArrival = () => {
     return (
         <>
             <div className='all_padding bg-[rgb(246,245,245)]'>
-                <div className='uppercase mb-3 md:mb-[48px] font-semibold text-2xl md:text-[70px] leading-[84px] text-[#060606]'>New arrival</div>
+                <div className='uppercase mb-1 md:mb-[48px] font-semibold text-2xl md:text-[70px] leading-[84px] text-[#060606]'>New arrival</div>
                 <ShortSleeve />
             </div>
 
