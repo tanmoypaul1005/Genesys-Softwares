@@ -7,7 +7,7 @@ const ProductOfMonth = () => {
 
   const [quantity, setQuantity] = useState(1);
 
-  const [size, setSize] = useState("M");
+  const [size, setSize] = useState(null);
 
   const [mainImage, setMainImage] = useState(iBeg1);
 

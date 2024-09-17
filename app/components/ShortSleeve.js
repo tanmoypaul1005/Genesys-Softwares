@@ -31,8 +31,8 @@ export default ShortSleeve;
 
 export const ProductCard = ({ imageSrc, title, price, originalPrice }) => {
   return (
-    <div className='flex flex-col items-center justify-center p-4 bg-white rounded-xl'>
-      <Image width={240} height={240} src={imageSrc} alt={title} className='rounded-lg' />
+    <div className='p-4 bg-white rounded-xl'>
+      <Image width={280} height={280} src={imageSrc} alt={title} className='rounded-lg' />
       <div className='flex flex-col mt-7 gap-y-3'>
         <div className='text-sm font-semibold leading-5'>{title}</div>
         <div className='flex text-lg font-medium leading-6'>
