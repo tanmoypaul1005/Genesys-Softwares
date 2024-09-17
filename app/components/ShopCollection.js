@@ -36,7 +36,7 @@ const ShopCollection = () => {
               minWidth: "100%"
             }}
             src={iMultiCap} className='object-cover opacity-75' alt="" />
-            <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
+            <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>HEADW EAR</div>
           </div>
 
           <div className='relative'> 
@@ -49,7 +49,7 @@ const ShopCollection = () => {
             }}
             className='opacity-75'
             src={iMultiBook} alt="" />
-          <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
+          <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>VALUE BOOKS</div>
           </div>
         </div>
 
@@ -62,7 +62,7 @@ const ShopCollection = () => {
               minWidth: "100%"
             }} className='object-cover opacity-75'
             src={iWaterBottle} alt="" />
-          <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
+          <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>Accessories</div>
         </div>
 
         <div className='flex flex-col w-full gap-y-5'>
@@ -77,7 +77,7 @@ const ShopCollection = () => {
             className='opacity-75'
             src={iTShirt1} alt="" 
             />
-<div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
+<div className='absolute w-[30px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>The Future Looks Bright Collection</div>
           </div>
 
           <div className='relative'>
@@ -90,7 +90,7 @@ const ShopCollection = () => {
             }}
             className='opacity-75'
             src={iTShirt2} alt="" />
-            <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
+            <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>TOPS</div>
           </div>
         
         </div>
