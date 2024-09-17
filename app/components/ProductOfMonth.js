@@ -100,9 +100,9 @@ const ProductOfMonth = () => {
               {["S", "M", "L", "XL", "XXL"].map((sizeOption, index) => (
                 <button
                   key={sizeOption}
-                  className={`px-3 py-2 ${index === 4 && "border-r-2"} border-t-2 border-b-2 border-l-2 border-black ${size === sizeOption
+                  className={`px-3 py-2 ${index === 4 && "border-r-2"} border-t-2 border-b-2 border-l-2 font-normal text-base border-black ${size === sizeOption
                     ? "bg-black text-white"
-                    : "bg-gray-100 text-gray-600"
+                    : "bg-gray-100 text-[#060606CC]"
                     }`}
                   onClick={() => setSize(sizeOption)}
                 >
@@ -117,18 +117,18 @@ const ProductOfMonth = () => {
             <label className="font-semibold">Quantity:</label>
             <div className="flex items-center mt-2">
               <button
-                className="px-4 py-2 border border-black "
+                className="px-4 text-[#060606CC] py-2 text-base font-normal border border-black "
                 onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}
               >
                 -
               </button>
               <div
                 type="number"
-                className="px-4 py-2 border-t border-b border-black"
+                className="px-4 py-2 text-[#060606CC] text-base font-normal border-t border-b border-black"
 
               >{quantity}</div>
               <button
-                className="px-4 py-2 border border-black"
+                className="px-4 text-[#060606CC] py-2 text-base font-normal border border-black"
                 onClick={() => setQuantity(quantity + 1)}
               >
                 +

@@ -1,4 +1,4 @@
-import { iPayment, iRedLogo } from '@/util/imageImports'
+import { iEmail, iPayment, iRedLogo, iTelephone } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
 
@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="mt-[48px] grid grid-cols-12 gap-x-10">
                 <div className='col-span-12 md:col-span-5'>
                     <div className='font-normal text-[24px] leading-7 text-white mb-[48px]'>Subscribe and be the first to receive notifications about our upcoming releases and the latest news. </div>
-                    
+
                     {/* <div className='border-[1px] w-auto text-white py-2 mb-3 text-center border-white rounded-xl'>Enter your email</div>
                     <div className='w-full py-2 text-center text-black bg-white rounded-xl'>Subscribe</div> */}
                 </div>
@@ -91,12 +91,18 @@ const Footer = () => {
                             Available between 8AM to 8PM. Ready to answer your questions.
                         </div>
 
-                        <div className='font-normal text-white text-[16px] leading-6'>
-                            013456789
+                        <div className='font-normal flex gap-x-3 text-white text-[16px] leading-6'>
+                            <Image src={iTelephone} alt="" />
+                            <div>
+                                013456789
+                            </div>
                         </div>
 
-                        <div className='font-normal text-white text-[16px] leading-6'>
-                            store@valuetainment.com
+                        <div className='font-normal flex gap-x-3 text-white text-[16px] leading-6'>
+                            <Image src={iEmail} alt="" />
+                            <div>
+                                store@valuetainment.com
+                            </div>
                         </div>
 
 
