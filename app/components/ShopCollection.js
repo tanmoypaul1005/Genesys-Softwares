@@ -1,13 +1,24 @@
-import { iBeg1, iMultiBook, iMultiCap, iTShirt1, iTShirt2, iWaterBottle } from '@/util/imageImports';
+import { iBeg1, iMultiBook, iMultiCap, iRightArrow, iTShirt1, iTShirt2, iWaterBottle } from '@/util/imageImports';
 import Image from 'next/image';
 import React from 'react';
 
 const ShopCollection = () => {
   return (
-    <div className='bg-gradient-to-b-custom all_padding'>
+    <div className='relative bg-gradient-to-b-custom all_padding'>
       <div className='flex flex-col items-center justify-center mb-4 text-4xl md:hidden gap-x-2'>
         <div className='text-white'>Shop</div>
         <div className='tracking-wide outlined-text'>Collection</div>
+      </div>
+
+      <div className='absolute flex-col hidden mb-4 top-20 left-[100px] md:flex'>
+        <div className='flex flex-col text-4xl'>
+        <div className='text-white'>Shop</div>
+        <div className='tracking-wide outlined-text'>Collection</div>
+        </div>
+        <div className='flex px-8 py-4 md:py-4 bg-white cursor-pointer gap-x-3 w-fit rounded-xl md:mt-[48px] my-5 md:mb-6'>
+                        <div className='font-medium leading-5 text-fs16'>VIEW ALL</div>
+                        <Image src={iRightArrow} alt="" />
+                    </div>
       </div>
 
       <div className='items-end justify-between hidden md:flex gap-x-10 '>
