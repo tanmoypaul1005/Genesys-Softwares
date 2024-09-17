@@ -93,13 +93,13 @@ const ProductOfMonth = () => {
             <p className="text-[#EA2127]"> $199.95</p>
           </div>
           {/* Size Selection */}
-          <div className="mb-4">
-            <label className="font-semibold">Size:</label>
-            <div className="flex mt-2 space-x-2">
-              {["S", "M", "L", "XL", "XXL"].map((sizeOption) => (
+          <div className="flex mb-4 gap-x-3">
+            <label className="font-medium flex justify-center items-center text-[#060606] text-[20px] leading-6">Size:</label>
+            <div className="flex">
+              {["S", "M", "L", "XL", "XXL"].map((sizeOption, index) => (
                 <button
                   key={sizeOption}
-                  className={`px-3 py-1 rounded-md border ${size === sizeOption
+                  className={`px-3 py-2 ${index === 4 && "border-r-2"} border-t-2 border-b-2 border-l-2 border-black ${size === sizeOption
                     ? "bg-black text-white"
                     : "bg-gray-100 text-gray-600"
                     }`}
