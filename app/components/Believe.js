@@ -42,7 +42,7 @@ const Believe = () => {
                 <Image src={iGoldenChess} height={200} alt="Golden Chess" />
             </div>
             <div className='absolute top-0 right-0'>
-                <Image src={iBgLogo} alt="Background Logo" />
+                <Image height={600} src={iBgLogo} alt="Background Logo" />
             </div>
             <div className='absolute transform -translate-x-1/2 top-10 left-1/2'>
                 <Image src={iWhatWeBelieveText} height={150} alt="What We Believe Text" />
