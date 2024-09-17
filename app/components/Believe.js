@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const Believe = () => {
-    
+
     const beliefs = [
         {
             title: 'Leadership',
@@ -24,11 +24,13 @@ const Believe = () => {
     ];
 
     return (
-        <div className='relative flex justify-between all_padding bg-gradient-custom'>
+        <div className='relative grid grid-cols-1 md:grid-cols-2 gap-x-10 all_padding bg-gradient-custom'>
             <div>
-            <Image className="w-full h-full" width={500} height={900} src={iMan2} alt="Man Image" />
+                <div className='hidden w-full h-full md:block'>
+                    <Image className="w-full h-full" width={500} height={900} src={iMan2} alt="Man Image" />
+                </div>
             </div>
-            <div className='flex flex-col gap-10 mt-20'>
+            <div className='flex flex-col gap-10 mt-28 md:mt-20'>
                 {beliefs.map((belief, index) => (
                     <div key={index} className='text-white w-[700px] text-medium border-b border-white pb-6'>
                         <span className='text-2xl leading-9'>{belief.title}</span>
