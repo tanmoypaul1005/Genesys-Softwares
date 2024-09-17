@@ -59,3 +59,11 @@ export { default as iFaceBook } from "../public/svg/facebook.svg";
 export { default as iTwitter} from "../public/svg/Twitter.svg";
 export { default as iLinkedin } from "../public/svg/Linkedin.svg";
 export { default as iInstagram } from "../public/svg/instagram.svg";
+
+
+//shop collection
+export { default as iMultiCap } from "../public/img-20240916T064119Z-001/img/multiCap.png";
+export { default as iMultiBook } from "../public/img-20240916T064119Z-001/img/multiBook.png";
+export { default as iWaterBottle } from "../public/img-20240916T064119Z-001/img/waterBottle.jpeg";
+export { default as iTShirt1 } from "../public/img-20240916T064119Z-001/img/tShirt1.jpeg";
+export { default as iTShirt2 } from "../public/img-20240916T064119Z-001/img/tShirt2.jpeg";
