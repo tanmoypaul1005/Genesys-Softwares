@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className='border w-full-[1px] text-white py-2 mb-3 text-center border-white rounded-xl'>Enter your email</div>
                     <div className='w-full py-2 text-center text-black bg-white rounded-xl'>Subscribe</div>
                 </div>
-                <div className='flex flex-col items-center justify-between col-span-12 mt-5 md:mt-0 md:flex-row md:col-span-7'>
+                <div className='flex flex-col flex-wrap justify-between col-span-12 mt-5 gap-y-5 md:flex-row md:items-start md:mt-0 md:col-span-7'>
                     <div className='flex flex-col gap-y-4'>
                         <div className='font-medium text-white text-[20px] leading-6'>
                             Customer Services
@@ -103,7 +103,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex justify-between'>
+            <div className='flex flex-col justify-between mt-10 gap-y-5 md:flex-row'>
                 <div className='text-base font-normal text-white '>© 2024 Valuetainment Store. All rights reserved.</div>
                 <Image src={iPayment} alt="Background Logo" />
             </div>

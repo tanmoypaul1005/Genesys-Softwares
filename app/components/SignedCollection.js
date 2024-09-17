@@ -5,8 +5,8 @@ import React from 'react'
 const SignedCollection = () => {
     return (
         <div className='relative'>
-            <div className='bg-[#111111] flex flex-col md:flex-row justify-between all_padding'>
-                <div>
+            <div className='bg-[#111111] flex w-full flex-col md:flex-row justify-between all_padding'>
+                <div className='w-full'>
                     <div className='uppercase font-medium text-[50px] leading-[58px] bg-gradient-to-b from-[#DE2A2F] to-[#EF5256] text-transparent bg-clip-text'>
                         <div className='text-white'>Patrick Bet-David </div>
                         <div>Signed</div>
@@ -23,9 +23,25 @@ const SignedCollection = () => {
                     </div>
                 </div>
 
-                <div className='flex gap-x-2'>
-                    <Image style={{ maxHeight: 400, minHeight: 400, minWidth: 300, maxWidth: 300 }} src={iBook1} alt="" width={500} height={500} />
-                    <Image style={{ maxHeight: 400, minHeight: 400, minWidth: 300, maxWidth: 300 }} src={iBook2} alt="" width={500} height={500} />
+                <div className='flex flex-wrap items-center justify-center w-full gap-2'>
+                    <div className='w-1/2  lg:w-1/3'>
+                        <Image
+                            className='w-full h-auto rounded-lg'
+                            src={iBook1}
+                            alt=""
+                            width={500}
+                            height={500}
+                        />
+                    </div>
+                    <div className='w-1/2 lg:w-1/3'>
+                        <Image
+                            className='w-full h-auto rounded-lg'
+                            src={iBook2}
+                            alt=""
+                            width={500}
+                            height={500}
+                        />
+                    </div>
                 </div>
             </div>
             <div className='relative font-bold uppercase bg-gradient-to-b text-[48px] leading-[48px] all_padding text-white'>
@@ -39,9 +55,9 @@ const SignedCollection = () => {
                 </div>
             </div>
 
-            <div className='absolute bottom-0 right-0'>
+            {/* <div className='absolute bottom-0 right-0'>
                 <Image src={iPaHomeHero} height={500} alt="" />
-            </div>
+            </div> */}
         </div>
     )
 }
