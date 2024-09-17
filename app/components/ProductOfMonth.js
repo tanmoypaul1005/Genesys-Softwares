@@ -21,7 +21,7 @@ const ProductOfMonth = () => {
 
   return (
     <div className="container p-6 mx-auto">
-      <div className="text-[70px] leading-[80px] justify-center font-bold text-center flex gap-x-2 mb-[48px]">
+      <div className="text-xl md:text-[70px] leading-[80px] justify-center font-bold text-center flex gap-x-2 mb-[48px]">
         <h1 className="">PRODUCT OF </h1>
         <div className="tracking-wide outlined-text">
           THE MONTH

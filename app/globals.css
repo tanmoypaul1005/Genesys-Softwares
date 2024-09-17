@@ -10,7 +10,7 @@
 
 
 .all_padding{
-  @apply px-5 md:p-[100px]
+  @apply p-5 md:p-[100px]
 }
 
 
