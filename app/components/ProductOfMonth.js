@@ -155,7 +155,7 @@ const ProductOfMonth = () => {
           {/* Share Links */}
           <div className="flex mt-6 gap-x-3">
             <div className="flex items-center justify-center font-semibold">Share:</div>
-            <Image src={iShare} alt="" />
+            <Image className="cursor-pointer" src={iShare} alt="" />
           </div>
         </div>
       </div>
