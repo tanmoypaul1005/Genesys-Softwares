@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'act-of-rejection': ['"Act of Rejection"', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-to-b': 'linear-gradient(180deg, #DE2A2F 0%, #EF5256 100%)',
