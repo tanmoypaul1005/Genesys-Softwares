@@ -12,7 +12,7 @@ const FutureProduct = () => {
   ];
 
   return (
-    <div className='flex flex-wrap justify-center md:justify-between gap-y-5'>
+    <div className='flex flex-wrap justify-center md:justify-between gap-y-8'>
       {products.map((product, index) => (
         <ProductCard
           key={index}
@@ -43,7 +43,7 @@ export const ProductCard = ({ imageSrc, title, price, originalPrice }) => {
         src={imageSrc}
         alt={title}
       />
-      <div className='flex flex-col mt-4 gap-y-3'>
+      <div className='flex flex-col mt-2 md:mt-4 gap-y-1 md:gap-y-3'>
         <div className='text-base font-medium leading-5 text-white'>{title}</div>
         <div className='flex text-xl font-medium leading-6 gap-x-3'>
           <div>${price}</div>
