@@ -6,7 +6,7 @@ const SignedCollection = () => {
     return (
         <div className='relative'>
             <div className='bg-[#111111] flex w-full flex-col md:flex-row justify-between all_padding'>
-                <div className='w-full'>
+                <div className='w-full mb-[50px]'>
                     <div className='uppercase font-medium text-4xl md:text-[50px] md:leading-[58px] bg-gradient-to-b from-[#DE2A2F] to-[#EF5256] text-transparent bg-clip-text'>
                         <div className='text-white'>Patrick Bet-David </div>
                         <div>Signed</div>
