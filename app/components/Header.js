@@ -1,4 +1,4 @@
-import { iHeaderSign, iLogo, iMenu, iValuetainment } from '@/util/imageImports'
+import { iHeaderSign, iLogo, iMenu } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
 import FutureProduct from './FutureProduct'
@@ -23,10 +23,10 @@ const Header = () => {
 
             <div className='relative'>
                 <div>
-                    <Image height={900} width={900} src={iHeaderSign} alt="" />
+                    <Image height={1000} width={1100} src={iHeaderSign} alt="" />
                 </div>
 
-                <div className='mt-[-16px] md:mt-[-40px]'>
+                <div className='mt-[-16px] md:mt-[-44px] px-4'>
                     <FutureProduct />
                 </div>
             </div>
