@@ -10,7 +10,7 @@ const Header = () => {
                 <div className='flex justify-between'>
                     <div className='hidden md:flex gap-x-2'>
                         <Image  src={iLogo} alt="" />
-                        <div className='flex text-[90px] leading-[110px] items-center justify-center font-extrabold text-white'>VTMERCH</div>
+                        <div className='flex text-[80px] leading-[80px] items-center justify-center font-extrabold text-white'>VTMERCH</div>
                     </div>
 
                     <div className='flex md:hidden gap-x-2'>
