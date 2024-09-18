@@ -64,9 +64,9 @@ const LaptopCollection = () => {
                         src={iMultiBook} alt="" />
                     <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>VALUE BOOKS</div>
                 </div>
-                </motion.div>
+            </motion.div>
 
-                <motion.div
+            <motion.div
                 className='relative w-full'
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -81,9 +81,9 @@ const LaptopCollection = () => {
                     }} className='object-cover opacity-75 rounded-xl'
                     src={iWaterBottle} alt="" />
                 <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>Accessories</div>
-                </motion.div>
+            </motion.div>
 
-                <motion.div
+            <motion.div
                 className='flex flex-col w-full gap-y-5'
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -116,7 +116,7 @@ const LaptopCollection = () => {
                     <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>TOPS</div>
                 </div>
 
-                </motion.div>
+            </motion.div>
         </motion.div>
     )
 }
