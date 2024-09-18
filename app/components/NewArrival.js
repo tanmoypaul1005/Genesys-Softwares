@@ -21,7 +21,7 @@ const NewArrival = () => {
                 <Image src={iFutureSeries} alt="" height={400} />
 
                 <div className='flex flex-col gap-y-5 md:flex-row gap-x-6'>
-                    {products.map((product, index) => (
+                    {products?.map((product, index) => (
                         <ProductCard
                             key={index}
                             imageSrc={product.imageSrc}

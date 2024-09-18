@@ -32,7 +32,7 @@ const Believe = () => {
             </div>
             <div className='flex flex-col gap-10 mt-28 md:mt-20'>
                 {beliefs.map((belief, index) => (
-                    <div key={index} className='text-white w-[700px] text-medium border-b border-white pb-6'>
+                    <div key={index} className='text-white w-[700px] text-medium border-b-[0.5px] border-white pb-6'>
                         <span className='text-2xl leading-9'>{belief.title}</span>
                         <span className='text-base'>{` ${belief.description}`}</span>
                     </div>
