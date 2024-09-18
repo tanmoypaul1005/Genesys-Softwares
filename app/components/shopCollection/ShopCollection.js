@@ -1,6 +1,7 @@
 import { iBeg1, iMultiBook, iMultiCap, iRightArrow, iTShirt1, iTShirt2, iWaterBottle, iWhiteLogo } from '@/util/imageImports';
 import Image from 'next/image';
 import React from 'react';
+import LaptopCollection from './LaptopCollection';
 
 const ShopCollection = () => {
   return (
@@ -25,90 +26,7 @@ const ShopCollection = () => {
          <Image height={600} src={iWhiteLogo} alt="" />
       </div>
 
-      <div className='items-end justify-between hidden md:flex gap-x-10 '>
-        <div className='relative w-full'>
-          <Image style={{
-            maxHeight: 290,
-            minHeight: 290,
-            maxWidth: "100%",
-            minWidth: "100%"
-          }}
-            src={iBeg1}
-            alt=""
-            className='opacity-75 rounded-xl'
-          />
-          <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
-        </div>
-
-        <div className='flex flex-col w-full gap-y-5'>
-          <div className='relative'>
-            <Image
-              style={{
-                maxHeight: 200,
-                minHeight: 200,
-                maxWidth: "100%",
-                minWidth: "100%"
-              }}
-              src={iMultiCap} className='object-cover opacity-75 rounded-xl' alt="" />
-            <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>HEADW EAR</div>
-          </div>
-
-          <div className='relative'>
-            <Image
-              style={{
-                maxHeight: 200,
-                minHeight: 200,
-                maxWidth: "100%",
-                minWidth: "100%"
-              }}
-              className='opacity-75 rounded-xl'
-              src={iMultiBook} alt="" />
-            <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>VALUE BOOKS</div>
-          </div>
-        </div>
-
-        <div className='relative w-full'>
-          <Image
-            style={{
-              maxHeight: 520,
-              minHeight: 520,
-              maxWidth: "100%",
-              minWidth: "100%"
-            }} className='object-cover opacity-75 rounded-xl'
-            src={iWaterBottle} alt="" />
-          <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>Accessories</div>
-        </div>
-
-        <div className='flex flex-col w-full gap-y-5'>
-          <div className='relative'>
-            <Image
-              style={{
-                maxHeight: 320,
-                minHeight: 320,
-                maxWidth: "100%",
-                minWidth: "100%"
-              }}
-              className='opacity-75 rounded-xl'
-              src={iTShirt1} alt=""
-            />
-            <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>The Future Looks Bright Collection</div>
-          </div>
-
-          <div className='relative'>
-            <Image
-              style={{
-                maxHeight: 320,
-                minHeight: 320,
-                maxWidth: "100%",
-                minWidth: "100%"
-              }}
-              className='opacity-75 rounded-xl'
-              src={iTShirt2} alt="" />
-            <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>TOPS</div>
-          </div>
-
-        </div>
-      </div>
+     <LaptopCollection/>
 
 
       <div className='flex flex-col items-center justify-center md:hidden gap-y-10 '>
