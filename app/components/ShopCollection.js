@@ -88,7 +88,7 @@ const ShopCollection = () => {
               className='opacity-75'
               src={iTShirt1} alt=""
             />
-            <div className='absolute w-[30px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>The Future Looks Bright Collection</div>
+            <div className='absolute w-[290px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>The Future Looks Bright Collection</div>
           </div>
 
           <div className='relative'>
