@@ -29,8 +29,7 @@ const ProductOfMonth = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div>
-
+        <div className="flex items-center justify-center">
           <div className="flex gap-x-6">
             <div className="flex flex-col items-center justify-center gap-x-3 gap-y-2">
               <div onClick={() => {
