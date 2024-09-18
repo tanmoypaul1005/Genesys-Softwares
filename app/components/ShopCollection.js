@@ -28,8 +28,8 @@ const ShopCollection = () => {
       <div className='items-end justify-between hidden md:flex gap-x-10 '>
         <div className='relative w-full'>
           <Image style={{
-            maxHeight: 250,
-            minHeight: 250,
+            maxHeight: 290,
+            minHeight: 290,
             maxWidth: "100%",
             minWidth: "100%"
           }}
@@ -44,8 +44,8 @@ const ShopCollection = () => {
           <div className='relative'>
             <Image
               style={{
-                maxHeight: 180,
-                minHeight: 180,
+                maxHeight: 200,
+                minHeight: 200,
                 maxWidth: "100%",
                 minWidth: "100%"
               }}
@@ -56,8 +56,8 @@ const ShopCollection = () => {
           <div className='relative'>
             <Image
               style={{
-                maxHeight: 180,
-                minHeight: 180,
+                maxHeight: 200,
+                minHeight: 200,
                 maxWidth: "100%",
                 minWidth: "100%"
               }}
@@ -70,8 +70,8 @@ const ShopCollection = () => {
         <div className='relative w-full'>
           <Image
             style={{
-              maxHeight: 450,
-              minHeight: 450,
+              maxHeight: 520,
+              minHeight: 520,
               maxWidth: "100%",
               minWidth: "100%"
             }} className='object-cover opacity-75 rounded-xl'
@@ -83,8 +83,8 @@ const ShopCollection = () => {
           <div className='relative'>
             <Image
               style={{
-                maxHeight: 250,
-                minHeight: 250,
+                maxHeight: 320,
+                minHeight: 320,
                 maxWidth: "100%",
                 minWidth: "100%"
               }}
@@ -97,8 +97,8 @@ const ShopCollection = () => {
           <div className='relative'>
             <Image
               style={{
-                maxHeight: 250,
-                minHeight: 250,
+                maxHeight: 320,
+                minHeight: 320,
                 maxWidth: "100%",
                 minWidth: "100%"
               }}
