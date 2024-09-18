@@ -8,6 +8,13 @@
   text-stroke: 1px black; /* Fallback for non-webkit browsers */
 }
 
+.outlined-text-white {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white; /* Fallback for non-webkit browsers */
+}
+
+
 
 .all_padding{
   @apply p-5 md:p-[100px]
