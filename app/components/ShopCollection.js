@@ -1,4 +1,4 @@
-import { iBeg1, iMultiBook, iMultiCap, iRightArrow, iTShirt1, iTShirt2, iWaterBottle } from '@/util/imageImports';
+import { iBeg1, iMultiBook, iMultiCap, iRightArrow, iTShirt1, iTShirt2, iWaterBottle, iWhiteLogo } from '@/util/imageImports';
 import Image from 'next/image';
 import React from 'react';
 
@@ -19,6 +19,10 @@ const ShopCollection = () => {
           <div className='font-medium leading-5 text-fs16'>VIEW ALL</div>
           <Image src={iRightArrow} alt="" />
         </div>
+      </div>
+
+      <div className='absolute top-0 left-0'>
+         <Image height={600} src={iWhiteLogo} alt="" />
       </div>
 
       <div className='items-end justify-between hidden md:flex gap-x-10 '>
