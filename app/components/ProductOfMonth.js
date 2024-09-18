@@ -70,7 +70,7 @@ const ProductOfMonth = () => {
                 <Image src={iBottomArrow} alt="" />
               </div>
             </div>
-            <div className="w-full max-w-[400px] mx-auto">
+            <div className="w-full max-h-[400px] mx-auto">
               <Image
                 className="w-full h-full rounded-lg shadow-md"
                 src={mainImage}
