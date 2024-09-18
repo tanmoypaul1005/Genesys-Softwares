@@ -48,22 +48,22 @@ export default ShortSleeve;
 export const ProductCard = ({ imageSrc, title, price, originalPrice }) => {
   return (
     <motion.div
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, ease: 'easeOut' }}
->
-    <div className='p-4 bg-white rounded-xl'>
-      <Image width={260} height={260} src={imageSrc} alt={title} className='rounded-lg' />
-      <div className='flex flex-col mt-7 gap-y-3'>
-        <div className='text-sm font-semibold leading-5'>{title}</div>
-        <div className='flex text-lg font-medium leading-6'>
-          <div>${price}</div>
-          <div className='px-3 text-gray-400 line-through'>${originalPrice}</div>
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+    >
+      <div className='p-4 bg-white rounded-xl'>
+        <Image width={260} height={260} src={imageSrc} alt={title} className='rounded-lg' />
+        <div className='flex flex-col mt-7 gap-y-3'>
+          <div className='text-sm font-semibold leading-5'>{title}</div>
+          <div className='flex text-lg font-medium leading-6'>
+            <div>${price}</div>
+            <div className='px-3 text-gray-400 line-through'>${originalPrice}</div>
+          </div>
         </div>
       </div>
-    </div>
     </motion.div>
   );
 };
