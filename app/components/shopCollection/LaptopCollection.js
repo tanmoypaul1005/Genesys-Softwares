@@ -35,7 +35,7 @@ const LaptopCollection = () => {
             </motion.div>
 
             <motion.div
-                className='relative w-full'
+                className='relative flex flex-col w-full gap-y-4'
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
