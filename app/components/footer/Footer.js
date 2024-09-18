@@ -104,10 +104,10 @@ const Footer = () => {
                         </div>
 
                         <div className='font-normal flex gap-x-3 text-white text-[16px] leading-6'>
-                            <Image src={iFaceBook} alt="" />
-                            <Image src={iTwitter} alt="" />
-                            <Image src={iLinkedin} alt="" />
-                            <Image src={iInstagram} alt="" />
+                            <Image className="cursor-pointer" src={iFaceBook} alt="" />
+                            <Image className="cursor-pointer" src={iTwitter} alt="" />
+                            <Image className="cursor-pointer" src={iLinkedin} alt="" />
+                            <Image className="cursor-pointer" src={iInstagram} alt="" />
                         </div>
 
 
@@ -117,7 +117,7 @@ const Footer = () => {
 
             <div className='flex flex-col justify-between mt-10 gap-y-5 md:flex-row'>
                 <div className='text-base font-normal text-white '>© 2024 Valuetainment Store. All rights reserved.</div>
-                <Image src={iPayment} alt="Background Logo" />
+                <Image className="cursor-pointer" src={iPayment} alt="Background Logo" />
             </div>
         </div>
     )

@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        cBrand: "#285D43",
+        cRichBlack:"#060606"
+      },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
       },
