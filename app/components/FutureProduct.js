@@ -25,6 +25,7 @@ const FutureProduct = () => {
           className='text-white'
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          
         >
           <Image
             width={250}
