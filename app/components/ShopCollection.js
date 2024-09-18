@@ -37,7 +37,7 @@ const ShopCollection = () => {
             alt=""
             className='opacity-75 rounded-xl'
           />
-          <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
+          <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>THE BOSS COLLECTION</div>
         </div>
 
         <div className='flex flex-col w-full gap-y-5'>
@@ -50,7 +50,7 @@ const ShopCollection = () => {
                 minWidth: "100%"
               }}
               src={iMultiCap} className='object-cover opacity-75 rounded-xl' alt="" />
-            <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>HEADW EAR</div>
+            <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>HEADW EAR</div>
           </div>
 
           <div className='relative'>
@@ -63,7 +63,7 @@ const ShopCollection = () => {
               }}
               className='opacity-75 rounded-xl'
               src={iMultiBook} alt="" />
-            <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>VALUE BOOKS</div>
+            <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>VALUE BOOKS</div>
           </div>
         </div>
 
@@ -76,7 +76,7 @@ const ShopCollection = () => {
               minWidth: "100%"
             }} className='object-cover opacity-75 rounded-xl'
             src={iWaterBottle} alt="" />
-          <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>Accessories</div>
+          <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>Accessories</div>
         </div>
 
         <div className='flex flex-col w-full gap-y-5'>
@@ -91,7 +91,7 @@ const ShopCollection = () => {
               className='opacity-75 rounded-xl'
               src={iTShirt1} alt=""
             />
-            <div className='absolute w-[290px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>The Future Looks Bright Collection</div>
+            <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>The Future Looks Bright Collection</div>
           </div>
 
           <div className='relative'>
