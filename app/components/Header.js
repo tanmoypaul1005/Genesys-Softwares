@@ -1,4 +1,4 @@
-import { iHeaderSign, iMenu, iValuetainment } from '@/util/imageImports'
+import { iHeaderSign, iLogo, iMenu, iValuetainment } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
 import FutureProduct from './FutureProduct'
@@ -6,12 +6,16 @@ import FutureProduct from './FutureProduct'
 const Header = () => {
     return (
         <div className='bg-[#EA2127] pb-[60px] padding_x'>
-            <div className='text-black py-5  md:py-[50px]'>
+            <div className='py-5 text-black md:py-10'>
                 <div className='flex justify-between'>
+                    <div className='hidden md:flex gap-x-2'>
+                        <Image  src={iLogo} alt="" />
+                        <div className='flex text-[112px] leading-[130px] items-center justify-center font-extrabold text-white'>VTMERCH</div>
+                    </div>
 
-                    <div className='flex gap-x-2'>
-                        <Image width={60} height={60} src={iValuetainment} alt="" />
-                        <div className='flex items-center justify-center font-extrabold'>VTMERCH</div>
+                    <div className='flex md:hidden gap-x-2'>
+                        <Image  src={iLogo} height={50}  width={50} alt="" />
+                        <div className='flex text-3xl md:text-[112px] md:leading-[130px] items-center justify-center font-extrabold text-white'>VTMERCH</div>
                     </div>
                     <Image alt="" src={iMenu} />
                 </div>
