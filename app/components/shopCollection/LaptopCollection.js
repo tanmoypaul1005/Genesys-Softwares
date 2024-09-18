@@ -24,8 +24,8 @@ const LaptopCollection = () => {
                 whileTap={{ scale: 0.95 }}
             >
                 <Image style={{
-                    maxHeight: 290,
-                    minHeight: 290,
+                    maxHeight: 310,
+                    minHeight: 310,
                     maxWidth: "100%",
                     minWidth: "100%"
                 }}
