@@ -14,7 +14,7 @@ const FutureProduct = () => {
 
   return (
     <motion.div
-      className='flex justify-between'
+      className='flex flex-wrap justify-center gap-y-8 md:justify-between'
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -25,6 +25,7 @@ const FutureProduct = () => {
           className='text-white'
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          
         >
           <Image
             width={250}
@@ -33,7 +34,7 @@ const FutureProduct = () => {
             src={product.imageSrc}
             alt={product.title}
           />
-          <div className='flex flex-col mt-4 gap-y-3'>
+          <div className='flex flex-col mt-2 md:mt-4 gap-y-1.5 md:gap-y-3'>
             <div className='text-base font-medium leading-5 text-white'>{product.title}</div>
             <div className='flex text-xl font-medium leading-6 gap-x-3'>
               <div>${product.price}</div>

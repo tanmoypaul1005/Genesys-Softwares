@@ -23,7 +23,7 @@ const Header = () => {
 
             <div className='relative'>
                 <div>
-                    <Image height={1000} width={1100} src={iHeaderSign} alt="" />
+                    <Image height={900} width={900} src={iHeaderSign} alt="" />
                 </div>
 
                 <div className='mt-[-16px] md:mt-[-44px] px-4'>
