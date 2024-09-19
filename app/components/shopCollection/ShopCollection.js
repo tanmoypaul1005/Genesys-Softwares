@@ -1,4 +1,4 @@
-import { iBeg1, iMultiBook, iMultiCap, iRightArrow, iTShirt1, iTShirt2, iWaterBottle, iWhiteLogo } from '@/util/imageImports';
+import { iBeg4, iMultiBook, iMultiCap, iRightArrow, iTShirt1, iTShirt2, iWaterBottle, iWhiteLogo } from '@/util/imageImports';
 import Image from 'next/image';
 import React from 'react';
 import LaptopCollection from './LaptopCollection';
@@ -39,7 +39,7 @@ const ShopCollection = () => {
               maxWidth: 250,
               minWidth: 250
             }}
-            src={iBeg1}
+            src={iBeg4}
             alt=""
             className='opacity-75 rounded-xl'
           />
