@@ -1,5 +1,5 @@
 "use client"
-import { iBeg1, iMultiBook, iMultiCap, iTShirt1, iTShirt2, iWaterBottle } from '@/util/imageImports'
+import { iBeg4, iMultiBook, iMultiCap, iTShirt1, iTShirt2, iWaterBottle } from '@/util/imageImports'
 import Image from 'next/image'
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
@@ -25,12 +25,12 @@ const LaptopCollection = () => {
                 whileTap={{ scale: 0.95 }}
             >
                 <Image style={{
-                    maxHeight: 310,
-                    minHeight: 310,
+                    maxHeight: 280,
+                    minHeight: 280,
                     maxWidth: "100%",
                     minWidth: "100%"
                 }}
-                    src={iBeg1}
+                    src={iBeg4}
                     alt=""
                     className='opacity-75 rounded-xl'
                 />
