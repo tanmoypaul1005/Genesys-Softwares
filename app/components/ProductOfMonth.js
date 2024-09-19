@@ -81,19 +81,19 @@ const ProductOfMonth = () => {
           </div>
         </div>
         <div>
-          <h2 className="mb-2 text-[32px] font-medium">Premium Valuetainment Leather Backpack</h2>
-          <p className="mb-4 text-base font-normal text-[#060606CC">
+          <h2 className="mb-2 text-[32px] text-[#060606] font-medium">Premium Valuetainment Leather Backpack</h2>
+          <p className="mb-5 text-base font-normal text-[#060606CC">
             The attention to detail is evident in every aspect of this backpack. From the sturdy
             hardware and reinforced stitching to the smooth zippers and luxurious lining, no detail
             has been overlooked.
           </p>
 
-          <div className="flex mb-2 text-xl font-semibold gap-x-3">
+          <div className="flex mb-5 text-xl font-semibold gap-x-3">
             <p className="">Price:</p>
             <p className="text-[#EA2127]"> $199.95</p>
           </div>
           {/* Size Selection */}
-          <div className="flex mb-4 gap-x-3">
+          <div className="flex mb-5 gap-x-3">
             <label className="font-medium flex justify-center items-center text-[#060606] text-[20px] leading-6">Size:</label>
             <div className="flex">
               {["S", "M", "L", "XL", "XXL"].map((sizeOption, index) => (
@@ -112,7 +112,7 @@ const ProductOfMonth = () => {
           </div>
 
           {/* Quantity Selector */}
-          <div className="mb-4">
+          <div className="mb-5">
             <label className="font-semibold">Quantity:</label>
             <div className="flex items-center mt-2">
               <button
@@ -152,7 +152,7 @@ const ProductOfMonth = () => {
           </div>
 
           {/* Share Links */}
-          <div className="flex mt-6 gap-x-3">
+          <div className="flex mt-5 gap-x-3">
             <div className="flex items-center justify-center font-semibold">Share:</div>
             <Image className="cursor-pointer" src={iShare} alt="" />
           </div>
