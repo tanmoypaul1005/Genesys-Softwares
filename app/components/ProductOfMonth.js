@@ -138,13 +138,13 @@ const ProductOfMonth = () => {
           {/* Action Buttons */}
           <div className="grid grid-cols-2 gap-x-6">
             <button
-              className="w-full px-4 py-4 text-white bg-black rounded-md"
+              className="w-full font-medium text-16px] leading-5 px-4 py-4 border-[1px] border-[#272312] rounded-xl uppercase text-[#272312]"
               onClick={handleAddToCart}
             >
               Add to Cart
             </button>
             <button
-              className="px-4 py-4 bg-white border border-black rounded-md w-ful"
+              className="px-4 py-4 font-medium text-16px] leading-5 text-white uppercase border-[1px] bg-black border-black rounded-xl w-ful"
               onClick={handleBuyNow}
             >
               Buy it Now
