@@ -1,8 +1,13 @@
+"use client"
+import { motion, useInView } from 'framer-motion';
 import { iBgLogo, iGoldenChess, iMan2, iWhatWeBelieveText } from '@/util/imageImports'
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
 
 const Believe = () => {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
 
     const beliefs = [
         {
@@ -24,20 +29,32 @@ const Believe = () => {
     ];
 
     return (
-        <div className='relative grid grid-cols-1 md:grid-cols-2 gap-x-10 all_padding bg-gradient-custom'>
+        <motion.div
+            ref={ref}
+            className='relative grid grid-cols-1 md:grid-cols-2 gap-x-10 all_padding bg-gradient-custom'
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+        >
+
             <div>
                 <div className='hidden w-full h-full md:block'>
                     <Image className="w-full h-full" width={500} height={900} src={iMan2} alt="Man Image" />
                 </div>
             </div>
-            <div className='flex flex-col gap-10 mt-28 md:mt-20'>
+            <motion.div
+                className='flex flex-col gap-10 mt-28 md:mt-20'
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
+            >
                 {beliefs.map((belief, index) => (
                     <div key={index} className='text-white w-[700px] text-medium border-b-[0.5px] border-white pb-6'>
                         <span className='text-2xl leading-9'>{belief.title}</span>
                         <span className='text-base'>{` ${belief.description}`}</span>
                     </div>
                 ))}
-            </div>
+            </motion.div>
             <div className='absolute bottom-0 right-0'>
                 <Image src={iGoldenChess} height={200} alt="Golden Chess" />
             </div>
@@ -47,7 +64,8 @@ const Believe = () => {
             <div className='absolute transform -translate-x-1/2 top-10 left-1/2'>
                 <Image src={iWhatWeBelieveText} height={150} alt="What We Believe Text" />
             </div>
-        </div>
+
+        </motion.div>
     )
 }
 

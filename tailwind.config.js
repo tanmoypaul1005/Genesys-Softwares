@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         cBrand: "#285D43",
-        cRichBlack:"#060606"
+        cRichBlack:"#060606",
+        cShadeOfRed:"#EA2127"
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
@@ -23,6 +24,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      
     },
   },
   plugins: [],

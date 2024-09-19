@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 
+/* styles.css */
+.custom-shadow {
+  box-shadow: 6px 6px 12px 0px #2F2F2F05!important;
+}
 .outlined-text {
   color: transparent;
-  -webkit-text-stroke: 1px black;
-  text-stroke: 1px black; /* Fallback for non-webkit browsers */
+  -webkit-text-stroke: 1px #060606;
+  text-stroke: 1px #060606; /* Fallback for non-webkit browsers */
 }
 
 .outlined-text-white {

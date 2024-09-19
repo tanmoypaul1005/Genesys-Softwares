@@ -49,7 +49,7 @@ export { default as iHeaderSign } from "../public/svg/headerSign.svg";
 
 
 //beg
-export { default as iBeg1 } from "../public/img-20240916T064119Z-001/img/beg1.jpeg";
+export { default as iBeg1 } from "../public/img-20240916T064119Z-001/img/beg1.png";
 export { default as iBeg2 } from "../public/img-20240916T064119Z-001/img/beg2.png";
 export { default as iBeg3 } from "../public/img-20240916T064119Z-001/img/beg3.png";
 

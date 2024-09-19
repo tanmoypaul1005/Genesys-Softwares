@@ -1,17 +1,20 @@
 import { iBook1, iBook2, iPaHomeHero, iPatSignature, iRightArrow, iVector } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
+import SignedCollectionTitle from './SignedCollectionTitle'
+import CommonHoverEffect from './CommonHoverEffect'
 
 const SignedCollection = () => {
     return (
         <div className='relative'>
             <div className='bg-[#111111] flex w-full flex-col md:flex-row justify-between all_padding'>
                 <div className='w-full mb-[50px]'>
-                    <div className='uppercase font-medium text-4xl md:text-[50px] md:leading-[58px] bg-gradient-to-b from-[#DE2A2F] to-[#EF5256] text-transparent bg-clip-text'>
+                    {/* <div className='uppercase font-medium text-4xl md:text-[50px] md:leading-[58px] bg-gradient-to-b from-[#DE2A2F] to-[#EF5256] text-transparent bg-clip-text'>
                         <div className='text-white'>Patrick Bet-David </div>
                         <div>Signed</div>
                         <div>Collection</div>
-                    </div>
+                    </div> */}
+                    <SignedCollectionTitle />
 
                     <div className='flex px-8 py-4 md:py-4 bg-white cursor-pointer gap-x-3 w-fit rounded-xl md:mt-[48px] my-5 md:mb-6'>
                         <div className='font-medium leading-5 text-fs16'>SHOP NOW</div>
@@ -25,22 +28,26 @@ const SignedCollection = () => {
 
                 <div className='flex flex-wrap items-center justify-center w-full gap-2'>
                     <div className='w-1/2 lg:w-1/3'>
-                        <Image
-                            className='w-full h-auto rounded-lg'
-                            src={iBook1}
-                            alt=""
-                            width={500}
-                            height={500}
-                        />
+                        <CommonHoverEffect>
+                            <Image
+                                className='w-full h-auto rounded-lg'
+                                src={iBook1}
+                                alt=""
+                                width={500}
+                                height={500}
+                            />
+                        </CommonHoverEffect>
                     </div>
                     <div className='w-1/2 lg:w-1/3'>
-                        <Image
-                            className='w-full h-auto rounded-lg'
-                            src={iBook2}
-                            alt=""
-                            width={500}
-                            height={500}
-                        />
+                        <CommonHoverEffect>
+                            <Image
+                                className='w-full h-auto rounded-lg'
+                                src={iBook2}
+                                alt=""
+                                width={500}
+                                height={500}
+                            />
+                        </CommonHoverEffect>
                     </div>
                 </div>
             </div>

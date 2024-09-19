@@ -29,34 +29,33 @@ const ProductOfMonth = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div>
-
+        <div className="flex items-center justify-center">
           <div className="flex gap-x-6">
             <div className="flex flex-col items-center justify-center gap-x-3 gap-y-2">
               <div onClick={() => {
                 if (mainImage === iBeg1) setMainImage(iBeg3);
                 else if (mainImage === iBeg3) setMainImage(iBeg2);
                 else if (mainImage === iBeg2) setMainImage(iBeg1);
-              }} className="flex items-center justify-center cursor-pointer">
+              }} className="flex items-center justify-center cursor-pointer custom-shadow">
                 <Image src={iTopArrow} alt="" />
               </div>
               <Image
                 style={{ maxHeight: 80, minHeight: 80, minWidth: 80, maxWidth: 80 }}
-                className={`w-16 ${mainImage === iBeg1 ? "border-2 border-blue-400" : ""} h-16 border rounded-md cursor-pointer`}
+                className={`w-16 border-2 ${mainImage === iBeg1 ? " border-blue-400" : "border-[#F6F5F5] shadow"} h-16 rounded-md cursor-pointer`}
                 src={iBeg1}
                 alt="Side view"
                 onClick={() => setMainImage(iBeg1)}
               />
               <Image
                 style={{ maxHeight: 80, minHeight: 80, minWidth: 80, maxWidth: 80 }}
-                className={`w-16 ${mainImage === iBeg2 ? "border-2 border-blue-400" : ""} h-16 border rounded-md cursor-pointer`}
+                className={`w-16 border-2 ${mainImage === iBeg2 ? " border-blue-400" : "border-[#F6F5F5] shadow"} h-16 rounded-md cursor-pointer`}
                 src={iBeg2}
                 alt="Red Backpack"
                 onClick={() => setMainImage(iBeg2)}
               />
               <Image
                 style={{ maxHeight: 80, minHeight: 80, minWidth: 80, maxWidth: 80 }}
-                className={`w-16 ${mainImage === iBeg3 ? "border-2 border-blue-400" : ""} h-16 border rounded-md cursor-pointer`}
+                className={`w-16 border-2 ${mainImage === iBeg3 ? " border-blue-400" : "border-[#F6F5F5] shadow"} h-16 rounded-md cursor-pointer`}
                 src={iBeg3}
                 alt="Open view"
                 onClick={() => setMainImage(iBeg3)}
@@ -70,7 +69,7 @@ const ProductOfMonth = () => {
                 <Image src={iBottomArrow} alt="" />
               </div>
             </div>
-            <div className="w-full max-w-[400px] mx-auto">
+            <div className="w-full max-h-[400px] md:max-w-[380px] md:min-w-[380] ">
               <Image
                 className="w-full h-full rounded-lg shadow-md"
                 src={mainImage}

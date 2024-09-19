@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { iMan1, iMan2, iMan3, iMan4 } from '@/util/imageImports';
 import Image from 'next/image';
+import CommonHoverEffect from './CommonHoverEffect';
 
 const FutureProduct = () => {
   const products = [
@@ -20,28 +21,24 @@ const FutureProduct = () => {
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
       {products.map((product, index) => (
-        <motion.div
-          key={index}
-          className='text-white'
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          
-        >
-          <Image
-            width={250}
-            height={250}
-            className='rounded-xl w-[250px] h-[250px]'
-            src={product.imageSrc}
-            alt={product.title}
-          />
-          <div className='flex flex-col mt-2 md:mt-4 gap-y-1.5 md:gap-y-3'>
-            <div className='text-base font-medium leading-5 text-white'>{product.title}</div>
-            <div className='flex text-xl font-medium leading-6 gap-x-3'>
-              <div>${product.price}</div>
-              <div className='line-through'>${product.originalPrice}</div>
+        <CommonHoverEffect key={index}>
+          <div className='text-white'>
+            <Image
+              width={250}
+              height={250}
+              className='rounded-xl w-[250px] h-[250px]'
+              src={product.imageSrc}
+              alt={product.title}
+            />
+            <div className='flex flex-col mt-2 md:mt-4 gap-y-1.5 md:gap-y-3'>
+              <div className='text-base font-medium leading-5 text-white'>{product.title}</div>
+              <div className='flex text-xl font-medium leading-6 gap-x-3'>
+                <div>${product.price}</div>
+                <div className='line-through'>${product.originalPrice}</div>
+              </div>
             </div>
           </div>
-        </motion.div>
+        </CommonHoverEffect>
       ))}
     </motion.div>
   );
