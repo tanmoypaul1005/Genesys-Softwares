@@ -49,7 +49,7 @@ const Believe = () => {
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
             >
                 {beliefs.map((belief, index) => (
-                    <div key={index} className='text-white w-[700px] text-medium border-b-[0.5px] border-white pb-6'>
+                    <div key={index} className='text-white text-medium border-b-[0.5px] border-white pb-6'>
                         <span className='text-2xl leading-9'>{belief.title}</span>
                         <span className='text-base'>{` ${belief.description}`}</span>
                     </div>

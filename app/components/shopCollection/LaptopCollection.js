@@ -47,8 +47,8 @@ const LaptopCollection = () => {
                     <div className='relative'>
                         <Image
                             style={{
-                                maxHeight: 210,
-                                minHeight: 210,
+                                maxHeight: 200,
+                                minHeight: 200,
                                 maxWidth: "100%",
                                 minWidth: "100%"
                             }}
@@ -62,8 +62,8 @@ const LaptopCollection = () => {
                     <div className='relative'>
                         <Image
                             style={{
-                                maxHeight: 210,
-                                minHeight: 210,
+                                maxHeight: 200,
+                                minHeight: 200,
                                 maxWidth: "100%",
                                 minWidth: "100%"
                             }}
@@ -85,8 +85,8 @@ const LaptopCollection = () => {
             >
                 <Image
                     style={{
-                        maxHeight: 520,
-                        minHeight: 520,
+                        maxHeight: 510,
+                        minHeight: 510,
                         maxWidth: "100%",
                         minWidth: "100%"
                     }} className='object-cover opacity-75 rounded-xl'
@@ -104,8 +104,8 @@ const LaptopCollection = () => {
                     <div className='relative'>
                         <Image
                             style={{
-                                maxHeight: 320,
-                                minHeight: 320,
+                                maxHeight: 300,
+                                minHeight: 300,
                                 maxWidth: "100%",
                                 minWidth: "100%"
                             }}
@@ -120,8 +120,8 @@ const LaptopCollection = () => {
                     <div className='relative'>
                         <Image
                             style={{
-                                maxHeight: 320,
-                                minHeight: 320,
+                                maxHeight: 300,
+                                minHeight: 300,
                                 maxWidth: "100%",
                                 minWidth: "100%"
                             }}
