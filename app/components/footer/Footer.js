@@ -115,8 +115,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col justify-between mt-10 gap-y-5 md:flex-row'>
-                <div className='text-base font-normal text-white '>© 2024 Valuetainment Store. All rights reserved.</div>
+            <div className='flex flex-col justify-between mt-10 mb-5 md:mt-20 gap-y-5 md:flex-row'>
+                <div className='text-base font-normal text-white'>© 2024 Valuetainment Store. All rights reserved.</div>
                 <Image className="cursor-pointer" src={iPayment} alt="Background Logo" />
             </div>
         </div>
