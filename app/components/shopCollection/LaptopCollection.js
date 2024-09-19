@@ -3,6 +3,7 @@ import { iBeg1, iMultiBook, iMultiCap, iTShirt1, iTShirt2, iWaterBottle } from '
 import Image from 'next/image'
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import CommonHoverEffect from '../CommonHoverEffect';
 
 const LaptopCollection = () => {
     const ref = useRef(null);
@@ -42,39 +43,27 @@ const LaptopCollection = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
             >
-                <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: 'easeOut' }}
-                >
+                <CommonHoverEffect>
                     <div className='relative'>
                         <Image
                             style={{
-                                maxHeight: 200,
-                                minHeight: 200,
+                                maxHeight: 210,
+                                minHeight: 210,
                                 maxWidth: "100%",
                                 minWidth: "100%"
                             }}
                             src={iMultiCap} className='object-cover opacity-75 rounded-xl' alt="" />
                         <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>HEADW EAR</div>
                     </div>
-                </motion.div>
+                </CommonHoverEffect>
 
 
-                <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: 'easeOut' }}
-                >
+                <CommonHoverEffect>
                     <div className='relative'>
                         <Image
                             style={{
-                                maxHeight: 200,
-                                minHeight: 200,
+                                maxHeight: 210,
+                                minHeight: 210,
                                 maxWidth: "100%",
                                 minWidth: "100%"
                             }}
@@ -82,7 +71,7 @@ const LaptopCollection = () => {
                             src={iMultiBook} alt="" />
                         <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>VALUE BOOKS</div>
                     </div>
-                </motion.div>
+                </CommonHoverEffect>
 
             </motion.div>
 
@@ -111,13 +100,7 @@ const LaptopCollection = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
             >
-                <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: 'easeOut' }}
-                >
+                <CommonHoverEffect>
                     <div className='relative'>
                         <Image
                             style={{
@@ -131,15 +114,9 @@ const LaptopCollection = () => {
                         />
                         <div className='absolute w-full bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>The Future Looks Bright Collection</div>
                     </div>
-                </motion.div>
+                </CommonHoverEffect>
 
-                <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: 'easeOut' }}
-                >
+                <CommonHoverEffect>
                     <div className='relative'>
                         <Image
                             style={{
@@ -152,7 +129,7 @@ const LaptopCollection = () => {
                             src={iTShirt2} alt="" />
                         <div className='absolute w-[150px] bottom-4 left-4 text-white font-fold text-[32px] leading-[38px]'>TOPS</div>
                     </div>
-                </motion.div>
+                </CommonHoverEffect>
             </motion.div>
         </motion.div>
     )
