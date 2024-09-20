@@ -1,19 +1,16 @@
-import { iBook1, iBook2, iPaHomeHero, iPatSignature, iRightArrow, iVector } from '@/util/imageImports'
+import { iBook1, iBook2, iPatSignature, iRightArrow, iVector } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
 import SignedCollectionTitle from './SignedCollectionTitle'
 import CommonHoverEffect from './CommonHoverEffect'
+import PaHomeHero from './signedCollection/PaHomeHero'
 
 const SignedCollection = () => {
     return (
         <div className='relative'>
             <div className='bg-[#111111] flex w-full flex-col md:flex-row justify-between all_padding'>
                 <div className='w-full mb-[50px]'>
-                    {/* <div className='uppercase font-medium text-4xl md:text-[50px] md:leading-[58px] bg-gradient-to-b from-[#DE2A2F] to-[#EF5256] text-transparent bg-clip-text'>
-                        <div className='text-white'>Patrick Bet-David </div>
-                        <div>Signed</div>
-                        <div>Collection</div>
-                    </div> */}
+            
                     <SignedCollectionTitle />
 
                     <div className='flex px-8 py-4 md:py-4 bg-white cursor-pointer gap-x-3 w-fit rounded-xl md:mt-[48px] my-5 md:mb-6'>
@@ -63,12 +60,7 @@ const SignedCollection = () => {
             </div>
 
             <div className='absolute bottom-0 right-0'>
-                <Image
-                    className='w-fit h-[220px] md:h-[500px]'
-                    src={iPaHomeHero}
-                    alt=""
-                    height={500} // Ensure the width is set to maintain aspect ratio
-                />
+                <PaHomeHero />
             </div>
         </div>
     )
