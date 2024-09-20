@@ -37,19 +37,17 @@ const Believe = () => {
             transition={{ duration: 0.5, ease: 'easeOut' }}
         >
 
-            <div>
                 <div className='hidden w-full h-full md:block'>
                     <Image className="w-full h-full" width={500} height={900} src={iMan2} alt="Man Image" />
                 </div>
-            </div>
             <motion.div
-                className='flex flex-col gap-10 mt-28 md:mt-20'
+                className='flex flex-col w-[85%] md:w-full gap-6 mt-20 md:gap-10'
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
             >
                 {beliefs.map((belief, index) => (
-                    <div key={index} className='text-white text-medium border-b-[0.5px] border-white pb-6'>
+                    <div key={index} className='text-white text-medium border-b-[0.5px] border-white pb-4 md:pb-6'>
                         <span className='text-2xl leading-9'>{belief.title}</span>
                         <span className='text-base'>{` ${belief.description}`}</span>
                     </div>
