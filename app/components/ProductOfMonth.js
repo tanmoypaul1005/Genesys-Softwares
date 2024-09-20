@@ -20,7 +20,7 @@ const ProductOfMonth = () => {
   };
 
   return (
-    <div className="container p-6 mx-auto">
+    <div className="container mx-auto all_padding">
       <div className="text-xl md:text-[70px] md:leading-[80px] justify-center font-bold text-center flex gap-x-2 mb-[48px]">
         <h1 className="">PRODUCT OF </h1>
         <div className="tracking-wide outlined-text">
@@ -69,7 +69,7 @@ const ProductOfMonth = () => {
                 <Image src={iBottomArrow} alt="" />
               </div>
             </div>
-            <div className="w-full max-h-[400px] md:max-w-[380px] md:min-w-[380] ">
+            <div className="w-full md:h-full max-h-[400px] md:max-w-[400px] md:min-w-[400px] ">
               <Image
                 className="w-full h-full rounded-lg shadow-md"
                 src={mainImage}
